@@ -8,9 +8,8 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'www',
-      // comment the following line to disable service workers in production
+      baseUrl: '/',
       serviceWorker: null,
-      baseUrl: 'https://remptehnaladka.local/'
     }
   ],
 };

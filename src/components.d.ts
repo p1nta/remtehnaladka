@@ -12,51 +12,61 @@ import {
 } from '@stencil/router';
 
 export namespace Components {
-  interface AppHome {}
-  interface AppProjects {
+  interface RemtehContacts {}
+  interface RemtehHome {}
+  interface RemtehProjects {
     'match': MatchResults;
   }
-  interface AppRoot {}
+  interface RemtehRoot {}
 }
 
 declare global {
 
 
-  interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
-  const HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  interface HTMLRemtehContactsElement extends Components.RemtehContacts, HTMLStencilElement {}
+  const HTMLRemtehContactsElement: {
+    prototype: HTMLRemtehContactsElement;
+    new (): HTMLRemtehContactsElement;
   };
 
-  interface HTMLAppProjectsElement extends Components.AppProjects, HTMLStencilElement {}
-  const HTMLAppProjectsElement: {
-    prototype: HTMLAppProjectsElement;
-    new (): HTMLAppProjectsElement;
+  interface HTMLRemtehHomeElement extends Components.RemtehHome, HTMLStencilElement {}
+  const HTMLRemtehHomeElement: {
+    prototype: HTMLRemtehHomeElement;
+    new (): HTMLRemtehHomeElement;
   };
 
-  interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
-  const HTMLAppRootElement: {
-    prototype: HTMLAppRootElement;
-    new (): HTMLAppRootElement;
+  interface HTMLRemtehProjectsElement extends Components.RemtehProjects, HTMLStencilElement {}
+  const HTMLRemtehProjectsElement: {
+    prototype: HTMLRemtehProjectsElement;
+    new (): HTMLRemtehProjectsElement;
+  };
+
+  interface HTMLRemtehRootElement extends Components.RemtehRoot, HTMLStencilElement {}
+  const HTMLRemtehRootElement: {
+    prototype: HTMLRemtehRootElement;
+    new (): HTMLRemtehRootElement;
   };
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
-    'app-projects': HTMLAppProjectsElement;
-    'app-root': HTMLAppRootElement;
+    'remteh-contacts': HTMLRemtehContactsElement;
+    'remteh-home': HTMLRemtehHomeElement;
+    'remteh-projects': HTMLRemtehProjectsElement;
+    'remteh-root': HTMLRemtehRootElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface AppHome {}
-  interface AppProjects {
+  interface RemtehContacts {}
+  interface RemtehHome {}
+  interface RemtehProjects {
     'match'?: MatchResults;
   }
-  interface AppRoot {}
+  interface RemtehRoot {}
 
   interface IntrinsicElements {
-    'app-home': AppHome;
-    'app-projects': AppProjects;
-    'app-root': AppRoot;
+    'remteh-contacts': RemtehContacts;
+    'remteh-home': RemtehHome;
+    'remteh-projects': RemtehProjects;
+    'remteh-root': RemtehRoot;
   }
 }
 
@@ -66,9 +76,10 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-      'app-projects': LocalJSX.AppProjects & JSXBase.HTMLAttributes<HTMLAppProjectsElement>;
-      'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'remteh-contacts': LocalJSX.RemtehContacts & JSXBase.HTMLAttributes<HTMLRemtehContactsElement>;
+      'remteh-home': LocalJSX.RemtehHome & JSXBase.HTMLAttributes<HTMLRemtehHomeElement>;
+      'remteh-projects': LocalJSX.RemtehProjects & JSXBase.HTMLAttributes<HTMLRemtehProjectsElement>;
+      'remteh-root': LocalJSX.RemtehRoot & JSXBase.HTMLAttributes<HTMLRemtehRootElement>;
     }
   }
 }

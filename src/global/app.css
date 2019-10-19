@@ -1,16 +1,74 @@
-/*
-  Global App CSS
-  ----------------------
-  Use this file for styles that should be applied to all components.
-  For example, "font-family" within the "body" selector is a CSS property
-  most apps will want applied to all components.
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/rubik_bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-  Any global CSS variables should also be applied here.
-*/
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/rubik_semibold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/rubik_regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  word-break: break-word;
+  outline-color: #c4d8f7;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input, textarea {
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important;
+  font-family: inherit;
+  outline: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-family: 'Rubik', Arial, sans-serif;
 }

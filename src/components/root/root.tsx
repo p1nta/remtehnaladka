@@ -2,7 +2,7 @@ import { Component, h } from '@stencil/core';
 
 
 @Component({
-  tag: 'app-root',
+  tag: 'remteh-root',
   styleUrl: 'root.css',
   shadow: true
 })
@@ -18,8 +18,8 @@ export class AppRoot {
         <main>
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
-              <stencil-route url='/' component='app-home' exact={true} />
-              <stencil-route url='/projects' component='app-projects' />
+              <stencil-route url='/' component='remteh-home' exact={true} />
+              <stencil-route url='/projects' component='remteh-projects' />
             </stencil-route-switch>
           </stencil-router>
         </main>

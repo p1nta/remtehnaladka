@@ -1,0 +1,13 @@
+.backup
+.DS_Store
+.idea
+.awcache
+.cache
+node_modules
+dist
+*.log
+package-lock.json
+*.sass.d.ts
+.vscode
+.stencil
+www

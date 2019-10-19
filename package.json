@@ -1,0 +1,27 @@
+{
+  "name": "remtehnaladka",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "^1.3.3",
+    "@stencil/router": "^1.0.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@stencil/sass": "^1.0.1",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "node-sass": "^4.12.0",
+    "tslint-eslint-rules": "^5.4.0"
+  }
+}

@@ -2,7 +2,7 @@
   "hosting": {
     "headers": [
       {
-        "source": "/build/p-*",
+        "source": "/remtehnaladka/build/p-*",
         "headers": [
           {
             "key": "Cache-Control",

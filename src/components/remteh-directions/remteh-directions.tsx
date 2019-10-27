@@ -24,7 +24,7 @@ export class Remtehdirections {
         'Инженерные комплексы',
         'Аграрные сооружения',
       ],
-      route: '/',
+      route: '/projects',
     },
     {
       image: '../../assets/img/leoni.png',
@@ -36,7 +36,7 @@ export class Remtehdirections {
         'Спортивные объекты',
         'Гостинницы и рестораны',
       ],
-      route: '/',
+      route: '/projects',
     },
     {
       image: '../../assets/img/leoni.png',
@@ -45,7 +45,7 @@ export class Remtehdirections {
         'Промышленные объекты',
         'Гражданские объекты',
       ],
-      route: '/',
+      route: '/projects',
     },
   ];
 

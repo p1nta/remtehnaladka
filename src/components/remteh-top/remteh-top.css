@@ -1,19 +1,26 @@
 .top_part_wrapper {
   position: relative;
+  min-height: 860px;
+  overflow: hidden;
+  background: url("../../assets/img/top.png");
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 7;
 }
 
 .top_part_bg {
-  background: url("../../assets/img/top.png") top center no-repeat;
-  width: 100%;
-  height: 100%;
-  padding-top: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  min-width: 100%;
 }
 
 .top_part_text {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 300px 260px;
+  padding: 160px 200px;
+  box-sizing: content-box;
 }
 
 .top_part_text .top_part_title {
@@ -32,4 +39,5 @@
   letter-spacing: 0.47px;
   line-height: 30px;
   margin-top: 40px;
+  max-width: 570px;
 }

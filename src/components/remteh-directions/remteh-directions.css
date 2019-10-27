@@ -1,5 +1,7 @@
 .directions_wrapper {
   padding: 70px 100px;
+  position: relative;
+  z-index: 6;
 }
 
 .directions_title {

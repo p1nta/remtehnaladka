@@ -89,7 +89,7 @@ export class RemtehMainProjects {
             {this.exampleElements.map(this.renderExampleItem)}
           </div>
           <a
-            href="/"
+            href="/projects"
             class="projects_main_all_link m_clicable"
           >
             Посмотреть все проекты

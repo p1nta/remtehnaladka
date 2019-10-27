@@ -38,10 +38,13 @@ export class RemtehHeader {
 
     return (
       <header class={headerStyle}>
-        <div class="left_group">
+        <a
+          class="left_group"
+          href="/"
+        >
           <img src={logo} class="logo_header"/>
           <p class="logo_text_header">REMTEHNALADKA</p>
-        </div>
+        </a>
         <div class="right_group">
           <stencil-route-link url="/projects" class="header_button" exact={true}>{this.getText('headerProjects')}</stencil-route-link>
           <button class="header_button" onClick={this.onClickContacts}>{this.getText('headerContacts')}</button>

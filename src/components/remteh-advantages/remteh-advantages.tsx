@@ -9,7 +9,6 @@ interface IAdvantagesItem {
 @Component({
   tag: 'remteh-advantages',
   styleUrl: 'remteh-advantages.css',
-  shadow: true
 })
 export class RemtehAdvantages {
   private advantagesItems: IAdvantagesItem[] = [

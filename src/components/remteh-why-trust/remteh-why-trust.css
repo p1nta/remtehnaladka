@@ -1,6 +1,13 @@
 .why_trust_wrapper {
-  padding: 30px 0;
+  padding: 310px 0 20px;
   font-size: 0;
+  overflow: hidden;
+  background: url("../../assets/img/why_trust_x2.png");
+  background-position: bottom;
+  background-size: cover;
+  margin-top: -230px;
+  position: relative;
+  z-index: 3;
 }
 
 .why_trust_title {
@@ -11,6 +18,12 @@
   text-align: center;
   line-height: 40px;
   margin-bottom: 15px;
+}
+
+.why_trust_first,
+.why_trust_second {
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .why_trust_first_img {

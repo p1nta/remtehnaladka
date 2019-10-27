@@ -1,8 +1,13 @@
+.what_we_do_background {
+  background: url("../../assets/img/city_architecture_x2.png");
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+}
+
 .what_we_do_wrapper {
   padding: 70px 100px 190px;
-  position: relative;
-  z-index: 2;
-  background: pink;
 }
 
 .what_we_do_title {

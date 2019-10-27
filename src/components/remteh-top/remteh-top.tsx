@@ -9,10 +9,13 @@ export class RemtehTop {
   render() {
     return (
       <div class="top_part_wrapper">
-        {/* <div class="top_part_image_wrapper"></div> */}
-        <div class="top_part_bg"></div>
         <div class="top_part_text">
-          <h2 class="top_part_title">Строительство объектов промышленного и гражданского назначения в Украине</h2>
+          <h2 class="top_part_title">
+            Строительство<br/>
+            объектов промышленного<br/>
+            и гражданского<br/>
+            назначения в Украине
+          </h2>
           <p class="top_part_description">
             Работая на рынке строительных услуг с 2006 года, мы заслужили
             высокую репутацию и безупречный авторитет, благодаря глубоким

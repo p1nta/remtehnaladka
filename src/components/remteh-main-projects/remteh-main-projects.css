@@ -1,11 +1,12 @@
 .projects_main_wrapper {
-  padding-top: 440px;
-  transform: translateY(-350px);
-  background-image: linear-gradient(180deg, #6B749F 0%, #021238 91%);
+  margin-top: -240px;
+  position: relative;
+  z-index: 4;
 }
 
 .projects_main_top_part {
-  padding: 0 180px 220px;
+  background-image: linear-gradient(180deg, #6B749F 0%, #021238 91%);
+  padding: 330px 180px 220px;
 }
 
 .projects_main_title {
@@ -19,6 +20,8 @@
 }
 
 .projects_main_achievements {
+  max-width: 1060px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -60,6 +63,11 @@
   padding: 0 100px 190px;
   text-align: center;
   background: #FFFFFF;
+  background: url("../../assets/img/projects_x2.png");
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .projects_main_examples {

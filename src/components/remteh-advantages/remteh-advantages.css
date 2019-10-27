@@ -1,5 +1,11 @@
 .advantages_wrapper {
-  padding: 100px;
+  margin-top: -230px;
+  padding: 330px 100px 300px;
+  background: url("../../assets/img/minimal_architecture_x2.png");
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .advantages_title {
@@ -13,7 +19,7 @@
 }
 
 .advantages_items_wrapper {
-  width: 1260px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 65px 0;
   font-size: 0;
@@ -40,6 +46,13 @@
 .advantages_item:first-child,
 .advantages_item:nth-child(5) {
   margin-left: 0;
+}
+
+.advantages_item:nth-child(2),
+.advantages_item:nth-child(3),
+.advantages_item:nth-child(6),
+.advantages_item:nth-child(7) {
+  transform: translateY(60px);
 }
 
 .advantages_item_img_wrapper {

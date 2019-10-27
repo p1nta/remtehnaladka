@@ -9,6 +9,8 @@ export class Home {
     return (
       <div class='remteh-home'>
         <remteh-top></remteh-top>
+        <remteh-directions></remteh-directions>
+
         <remteh-contacts></remteh-contacts>
       </div>
     );

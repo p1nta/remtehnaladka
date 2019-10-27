@@ -2,3 +2,58 @@
   height: 100%;
   overflow: auto;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  word-break: break-word;
+  outline-color: #c4d8f7;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input, textarea {
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important;
+  font-family: inherit;
+  outline: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+html, body {
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Rubik', Arial, sans-serif;
+}
+
+.intent_mouse button {
+  outline: none !important;
+}

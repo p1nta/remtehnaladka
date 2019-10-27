@@ -1,0 +1,49 @@
+import { Component, h } from '@stencil/core';
+
+import svgArrow from '../../assets/svg/arrow.svg';
+
+@Component({
+  tag: 'remteh-contacts',
+  styleUrl: 'remteh-contacts.css',
+  // shadow: true
+})
+export class RemtehContacts {
+  constructor() {
+    document.querySelector('lang-method').getText().then((method) => {
+      this.getText = method;
+    });
+  }
+
+  getText: (key: string) => void;
+
+  render() {
+    return (
+      <div class="contacts_wrapper">
+        <div class="contacts_container">
+          <img src={svgArrow} class="arrow" />
+          <p class="title">
+            {this.getText('contactsTitle')}
+          </p>
+          <p class="description">
+            {this.getText('contactsContactUs')}
+          </p>
+          <a
+            class="email"
+            href="mailto:info@rtn.com.ua"
+          >
+            info@rtn.com.ua
+          </a>
+          <p class="phones">
+            +38 (050) 278-35-89
+            <br/>
+            +38 (097) 535-12-83
+          </p>
+          <p class="adress">
+            {this.getText('contactsAddres')}
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+}

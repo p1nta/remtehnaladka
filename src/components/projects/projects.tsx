@@ -8,7 +8,6 @@ import * as slides from './slides.json';
 @Component({
   tag: 'remteh-projects',
   styleUrl: 'projects.css',
-  // shadow: true,
 })
 export class Projects {
   constructor() {

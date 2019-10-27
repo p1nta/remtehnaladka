@@ -29,6 +29,7 @@ export namespace Components {
   }
   interface RemtehRoot {}
   interface RemtehSelect {}
+  interface RemtehTop {}
   interface TabBar {
     'onClick': (event: MouseEvent) => void;
     'selectedTab': string;
@@ -91,6 +92,12 @@ declare global {
     new (): HTMLRemtehSelectElement;
   };
 
+  interface HTMLRemtehTopElement extends Components.RemtehTop, HTMLStencilElement {}
+  const HTMLRemtehTopElement: {
+    prototype: HTMLRemtehTopElement;
+    new (): HTMLRemtehTopElement;
+  };
+
   interface HTMLTabBarElement extends Components.TabBar, HTMLStencilElement {}
   const HTMLTabBarElement: {
     prototype: HTMLTabBarElement;
@@ -111,6 +118,7 @@ declare global {
     'remteh-projects': HTMLRemtehProjectsElement;
     'remteh-root': HTMLRemtehRootElement;
     'remteh-select': HTMLRemtehSelectElement;
+    'remteh-top': HTMLRemtehTopElement;
     'tab-bar': HTMLTabBarElement;
     'tab-slider': HTMLTabSliderElement;
   }
@@ -129,6 +137,7 @@ declare namespace LocalJSX {
   }
   interface RemtehRoot {}
   interface RemtehSelect {}
+  interface RemtehTop {}
   interface TabBar {
     'onClick'?: (event: MouseEvent) => void;
     'selectedTab'?: string;
@@ -148,6 +157,7 @@ declare namespace LocalJSX {
     'remteh-projects': RemtehProjects;
     'remteh-root': RemtehRoot;
     'remteh-select': RemtehSelect;
+    'remteh-top': RemtehTop;
     'tab-bar': TabBar;
     'tab-slider': TabSlider;
   }
@@ -167,6 +177,7 @@ declare module "@stencil/core" {
       'remteh-projects': LocalJSX.RemtehProjects & JSXBase.HTMLAttributes<HTMLRemtehProjectsElement>;
       'remteh-root': LocalJSX.RemtehRoot & JSXBase.HTMLAttributes<HTMLRemtehRootElement>;
       'remteh-select': LocalJSX.RemtehSelect & JSXBase.HTMLAttributes<HTMLRemtehSelectElement>;
+      'remteh-top': LocalJSX.RemtehTop & JSXBase.HTMLAttributes<HTMLRemtehTopElement>;
       'tab-bar': LocalJSX.TabBar & JSXBase.HTMLAttributes<HTMLTabBarElement>;
       'tab-slider': LocalJSX.TabSlider & JSXBase.HTMLAttributes<HTMLTabSliderElement>;
     }

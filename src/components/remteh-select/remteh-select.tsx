@@ -1,9 +1,10 @@
-import { Component, h, State } from '@stencil/core';
+import { Component, h, State, Prop } from '@stencil/core';
+
+import { IFilters } from '../tab-slider/tab-slider';
 
 @Component({
   tag: 'remteh-select',
   styleUrl: 'remteh-select.css',
-  shadow: true
 })
 export class RemtehSelect {
   constructor() {
@@ -12,12 +13,43 @@ export class RemtehSelect {
     });
   }
 
+  refInput: HTMLInputElement;
+
   getText: (key: string) => void;
 
-  @State() options = [ 'All' , 'Industrial' , 'Civil' , 'Foreign' ];
-  @State() selectedOption = 'All';
+  @Prop() options: IFilters[];
+  @Prop() selectedOption: IFilters;
+  @Prop() onSelect: (value: IFilters) => void;
   @State() opened = false;
+  @State() focused = false;
 
+
+  onFocus = () => {
+    // this.focused = true;
+  }
+
+  onBlur = () => {
+    setTimeout(() => {
+      this.focused = false;
+      this.opened = false;
+    }, 200);
+  }
+
+  onKeyDown = (e) => {
+    console.log(e);
+  }
+
+  onClick = (e: any) => {
+    const value = e.currentTarget.getAttribute('data-value');
+
+    if (value && this.opened) {
+      this.onSelect(value);
+      this.opened = false
+    } else if(!this.opened && !value){
+      this.refInput.focus();
+      this.opened = true;
+    }
+  }
 
   prepareDropdown() {
     const filtres = [];
@@ -27,15 +59,22 @@ export class RemtehSelect {
     });
 
     return filtres.map(el => {
-      return <div>{this.getText(`filter${el}`)}</div>
+      return <div data-value={el} class="select_option" onClick={this.onClick}>{this.getText(`filter${el}`)}</div>
     })
   }
 
   render() {
     return (
-      <div class="select_container">
-        <input type="button" class="select_input" />
-        <div class="select_window"></div>
+      <div onClick={this.opened ? null : this.onClick} class={{"select_container": true, "select_focused": this.focused, "select_opened": this.opened }}>
+        <input
+          onFocus={this.onFocus}
+          onKeyDown={this.onKeyDown}
+          onBlur={this.onBlur}
+          type="button"
+          class="select_input"
+          ref={el => this.refInput = el}
+        />
+        <div class="select_window">{this.getText(`filter${this.selectedOption}`)}</div>
         <div class="select_dropdown">
           {this.prepareDropdown()}
         </div>

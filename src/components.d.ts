@@ -11,14 +11,22 @@ import {
   MatchResults,
 } from '@stencil/router';
 import {
+  IFilters,
+} from './components/tab-slider/tab-slider';
+import {
+  IFilters as IFilters1,
   ISlideFilter,
 } from './components/tab-slider/tab-slider';
 
 export namespace Components {
   interface LangMethod {
+    'getCaseText': () => Promise<(key: string) => any>;
     'getText': () => Promise<(key: string) => any>;
   }
   interface RemtehBottom {}
+  interface RemtehCase {
+    'case': string;
+  }
   interface RemtehContacts {}
   interface RemtehHeader {
     'mode': 'Home' | 'Projects' | 'Case';
@@ -28,16 +36,20 @@ export namespace Components {
     'match': MatchResults;
   }
   interface RemtehRoot {}
-  interface RemtehSelect {}
+  interface RemtehSelect {
+    'onSelect': (value: IFilters) => void;
+    'options': IFilters[];
+    'selectedOption': IFilters;
+  }
   interface RemtehTop {}
   interface TabBar {
-    'onClick': (event: MouseEvent) => void;
-    'selectedTab': string;
-    'tabs': string[];
+    'onChangeTab': (value: IFilters) => void;
+    'selectedTab': IFilters;
+    'tabs': IFilters[];
   }
   interface TabSlider {
     'slides': ISlideFilter;
-    'tabs': string[];
+    'tabs': IFilters[];
   }
 }
 
@@ -54,6 +66,12 @@ declare global {
   const HTMLRemtehBottomElement: {
     prototype: HTMLRemtehBottomElement;
     new (): HTMLRemtehBottomElement;
+  };
+
+  interface HTMLRemtehCaseElement extends Components.RemtehCase, HTMLStencilElement {}
+  const HTMLRemtehCaseElement: {
+    prototype: HTMLRemtehCaseElement;
+    new (): HTMLRemtehCaseElement;
   };
 
   interface HTMLRemtehContactsElement extends Components.RemtehContacts, HTMLStencilElement {}
@@ -112,6 +130,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'lang-method': HTMLLangMethodElement;
     'remteh-bottom': HTMLRemtehBottomElement;
+    'remteh-case': HTMLRemtehCaseElement;
     'remteh-contacts': HTMLRemtehContactsElement;
     'remteh-header': HTMLRemtehHeaderElement;
     'remteh-home': HTMLRemtehHomeElement;
@@ -127,6 +146,9 @@ declare global {
 declare namespace LocalJSX {
   interface LangMethod {}
   interface RemtehBottom {}
+  interface RemtehCase {
+    'case'?: string;
+  }
   interface RemtehContacts {}
   interface RemtehHeader {
     'mode'?: 'Home' | 'Projects' | 'Case';
@@ -136,21 +158,26 @@ declare namespace LocalJSX {
     'match'?: MatchResults;
   }
   interface RemtehRoot {}
-  interface RemtehSelect {}
+  interface RemtehSelect {
+    'onSelect'?: (value: IFilters) => void;
+    'options'?: IFilters[];
+    'selectedOption'?: IFilters;
+  }
   interface RemtehTop {}
   interface TabBar {
-    'onClick'?: (event: MouseEvent) => void;
-    'selectedTab'?: string;
-    'tabs'?: string[];
+    'onChangeTab'?: (value: IFilters) => void;
+    'selectedTab'?: IFilters;
+    'tabs'?: IFilters[];
   }
   interface TabSlider {
     'slides'?: ISlideFilter;
-    'tabs'?: string[];
+    'tabs'?: IFilters[];
   }
 
   interface IntrinsicElements {
     'lang-method': LangMethod;
     'remteh-bottom': RemtehBottom;
+    'remteh-case': RemtehCase;
     'remteh-contacts': RemtehContacts;
     'remteh-header': RemtehHeader;
     'remteh-home': RemtehHome;
@@ -171,6 +198,7 @@ declare module "@stencil/core" {
     interface IntrinsicElements {
       'lang-method': LocalJSX.LangMethod & JSXBase.HTMLAttributes<HTMLLangMethodElement>;
       'remteh-bottom': LocalJSX.RemtehBottom & JSXBase.HTMLAttributes<HTMLRemtehBottomElement>;
+      'remteh-case': LocalJSX.RemtehCase & JSXBase.HTMLAttributes<HTMLRemtehCaseElement>;
       'remteh-contacts': LocalJSX.RemtehContacts & JSXBase.HTMLAttributes<HTMLRemtehContactsElement>;
       'remteh-header': LocalJSX.RemtehHeader & JSXBase.HTMLAttributes<HTMLRemtehHeaderElement>;
       'remteh-home': LocalJSX.RemtehHome & JSXBase.HTMLAttributes<HTMLRemtehHomeElement>;

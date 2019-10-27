@@ -14,6 +14,7 @@ export class Home {
         <remteh-main-projects></remteh-main-projects>
         <remteh-why-trust></remteh-why-trust>
         <remteh-advantages></remteh-advantages>
+        <remteh-clients></remteh-clients>
         <remteh-contacts></remteh-contacts>
       </div>
     );

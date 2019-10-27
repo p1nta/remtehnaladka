@@ -10,6 +10,7 @@ export class Home {
       <div class='remteh-home'>
         <remteh-top></remteh-top>
         <remteh-directions></remteh-directions>
+        <remteh-what-we-do></remteh-what-we-do>
 
         <remteh-contacts></remteh-contacts>
       </div>

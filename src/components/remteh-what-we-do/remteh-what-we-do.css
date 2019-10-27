@@ -1,0 +1,65 @@
+.what_we_do_wrapper {
+  padding: 70px 100px;
+}
+
+.what_we_do_title {
+  font-family: Charter-Roman;
+  font-size: 40px;
+  color: #041543;
+  letter-spacing: 1.29px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
+}
+
+.what_we_do_items_wrapper {
+  max-width: 880px;
+  margin: 115px auto;
+  column-count: 2;
+  font-size: 0;
+}
+
+.what_we_do_item {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(105,136,204,0.07);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 40px;
+  width: 400px;
+  box-sizing: border-box;
+  min-height: 470px;
+}
+
+.what_we_do_item:last-child,
+.what_we_do_item:first-child {
+  min-height: 400px;
+}
+
+.what_we_do_item:nth-child(odd) {
+  margin-bottom: 40px;
+}
+
+.what_we_do_item_image {
+  width: 70px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.what_we_do_item_title {
+  font-family: Charter-Roman;
+  font-size: 22px;
+  color: #041543;
+  letter-spacing: 0.51px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.what_we_do_item_description {
+  opacity: 0.6;
+  font-family: Rubik-Light;
+  font-size: 14px;
+  color: #041543;
+  letter-spacing: 0.6px;
+  line-height: 30px;
+  margin: 0;
+}

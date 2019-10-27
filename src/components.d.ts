@@ -25,6 +25,7 @@ export namespace Components {
     'mode': 'Home' | 'Projects' | 'Case';
   }
   interface RemtehHome {}
+  interface RemtehMainProjects {}
   interface RemtehProjects {
     'match': MatchResults;
   }
@@ -82,6 +83,12 @@ declare global {
     new (): HTMLRemtehHomeElement;
   };
 
+  interface HTMLRemtehMainProjectsElement extends Components.RemtehMainProjects, HTMLStencilElement {}
+  const HTMLRemtehMainProjectsElement: {
+    prototype: HTMLRemtehMainProjectsElement;
+    new (): HTMLRemtehMainProjectsElement;
+  };
+
   interface HTMLRemtehProjectsElement extends Components.RemtehProjects, HTMLStencilElement {}
   const HTMLRemtehProjectsElement: {
     prototype: HTMLRemtehProjectsElement;
@@ -130,6 +137,7 @@ declare global {
     'remteh-directions': HTMLRemtehDirectionsElement;
     'remteh-header': HTMLRemtehHeaderElement;
     'remteh-home': HTMLRemtehHomeElement;
+    'remteh-main-projects': HTMLRemtehMainProjectsElement;
     'remteh-projects': HTMLRemtehProjectsElement;
     'remteh-root': HTMLRemtehRootElement;
     'remteh-select': HTMLRemtehSelectElement;
@@ -149,6 +157,7 @@ declare namespace LocalJSX {
     'mode'?: 'Home' | 'Projects' | 'Case';
   }
   interface RemtehHome {}
+  interface RemtehMainProjects {}
   interface RemtehProjects {
     'match'?: MatchResults;
   }
@@ -173,6 +182,7 @@ declare namespace LocalJSX {
     'remteh-directions': RemtehDirections;
     'remteh-header': RemtehHeader;
     'remteh-home': RemtehHome;
+    'remteh-main-projects': RemtehMainProjects;
     'remteh-projects': RemtehProjects;
     'remteh-root': RemtehRoot;
     'remteh-select': RemtehSelect;
@@ -195,6 +205,7 @@ declare module "@stencil/core" {
       'remteh-directions': LocalJSX.RemtehDirections & JSXBase.HTMLAttributes<HTMLRemtehDirectionsElement>;
       'remteh-header': LocalJSX.RemtehHeader & JSXBase.HTMLAttributes<HTMLRemtehHeaderElement>;
       'remteh-home': LocalJSX.RemtehHome & JSXBase.HTMLAttributes<HTMLRemtehHomeElement>;
+      'remteh-main-projects': LocalJSX.RemtehMainProjects & JSXBase.HTMLAttributes<HTMLRemtehMainProjectsElement>;
       'remteh-projects': LocalJSX.RemtehProjects & JSXBase.HTMLAttributes<HTMLRemtehProjectsElement>;
       'remteh-root': LocalJSX.RemtehRoot & JSXBase.HTMLAttributes<HTMLRemtehRootElement>;
       'remteh-select': LocalJSX.RemtehSelect & JSXBase.HTMLAttributes<HTMLRemtehSelectElement>;

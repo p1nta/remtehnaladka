@@ -11,6 +11,7 @@ export class Home {
         <remteh-top></remteh-top>
         <remteh-directions></remteh-directions>
         <remteh-what-we-do></remteh-what-we-do>
+        <remteh-main-projects></remteh-main-projects>
 
         <remteh-contacts></remteh-contacts>
       </div>

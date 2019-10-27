@@ -1,0 +1,104 @@
+.projects_main_wrapper {
+  padding-top: 440px;
+  transform: translateY(-350px);
+  background-image: linear-gradient(180deg, #6B749F 0%, #021238 91%);
+}
+
+.projects_main_top_part {
+  padding: 0 180px 220px;
+}
+
+.projects_main_title {
+  font-family: Charter-Roman;
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: 1.29px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 77px;
+}
+
+.projects_main_achievements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects_main_achievement_item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.projects_main_achievement_image {
+  width: 85px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.projects_main_achievement_item_count {
+  font-family: Charter-Roman;
+  font-size: 80px;
+  color: #FAD390;
+  letter-spacing: 2.58px;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+
+.projects_main_achievement_description {
+  opacity: 0.6;
+  font-family: Rubik-Light;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.6px;
+  text-align: center;
+  line-height: 25px;
+  width: 165px;
+  margin: 0 auto;
+}
+
+.projects_main_bottom_part {
+  padding: 0 100px 190px;
+  text-align: center;
+  background: #FFFFFF;
+}
+
+.projects_main_examples {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  transform: translateY(-120px);
+}
+
+.projects_main_example_item {
+  text-align: center;
+  max-width: 360px;
+  width: calc((100% - 90px) / 3);
+}
+
+.projects_main_example_item_image {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(105,136,204,0.18);
+  border-radius: 12px;
+  margin-bottom: 38px;
+  width: 100%;
+}
+
+.projects_main_example_item_description {
+  font-family: Charter-Roman;
+  font-size: 22px;
+  color: #041543;
+  letter-spacing: 0.51px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.projects_main_all_link {
+  font-family: Rubik-Regular;
+  font-size: 18px;
+  color: #F6B93A;
+  letter-spacing: 0.53px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: underline;
+}

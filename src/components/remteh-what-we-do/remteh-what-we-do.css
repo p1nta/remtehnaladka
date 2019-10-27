@@ -1,5 +1,8 @@
 .what_we_do_wrapper {
-  padding: 70px 100px;
+  padding: 70px 100px 190px;
+  position: relative;
+  z-index: 2;
+  background: pink;
 }
 
 .what_we_do_title {
@@ -14,7 +17,7 @@
 
 .what_we_do_items_wrapper {
   max-width: 880px;
-  margin: 115px auto;
+  margin: 115px auto 0;
   column-count: 2;
   font-size: 0;
 }

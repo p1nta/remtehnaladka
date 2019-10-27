@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   min-height: 266px;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   margin-bottom: 100px;
   overflow: hidden;
@@ -41,20 +41,24 @@
 }
 
 .title_img_mobile {
-  display: block
-}
-
-.title_img:not(.title_img_mobile) {
   display: none;
 }
 
 @media (max-width: 500px) {
   .title_text {
     font-size: 35px;
-    margin-top: 48px;
+    margin-top: 40px;
   }
 
   .b_title {
     margin-bottom: 50px;
+  }
+
+  .title_img_mobile {
+    display: block;
+  }
+
+  .title_img:not(.title_img_mobile) {
+    display: none;
   }
 }

@@ -12,12 +12,11 @@ export interface ISlideFilter {
   Foreign: ISlide[];
 }
 
-type IFilters = 'All' | 'Industrial' | 'Civil' | 'Foreign';
+export type IFilters = 'All' | 'Industrial' | 'Civil' | 'Foreign';
 
 @Component({
   tag: 'tab-slider',
   styleUrl: 'tab-slider.css',
-  // shadow: true
 })
 export class TabSlider {
   constructor() {
@@ -28,13 +27,13 @@ export class TabSlider {
 
   getText: (key: string) => void;
 
-  @Prop() tabs: string[];
+  @Prop() tabs: IFilters[];
   @Prop() slides: ISlideFilter;
 
   @State() selectedTab: IFilters = 'All';
 
-  onSelectTab = (event: MouseEvent) => {
-    this.selectedTab = event.target['name'] || event.target['value'];
+  onSelectTab = (value: IFilters) => {
+    this.selectedTab = value;
   }
 
   slide = (slide: ISlide, key: number) => {
@@ -76,7 +75,7 @@ export class TabSlider {
       <div class="slider">
         <tab-bar
           tabs={['All', ...this.tabs]}
-          onClick={this.onSelectTab}
+          onChangeTab={this.onSelectTab}
           selectedTab={this.selectedTab}
         />
         {this.renderSlides()}

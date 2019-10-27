@@ -1,14 +1,15 @@
 import { Component, h, Prop } from '@stencil/core';
 
+import { IFilters } from './tab-slider';
+
 @Component({
   tag: 'tab-bar',
   styleUrl: 'tab-slider.css',
-  // shadow: true
 })
 export class TabBar {
-  @Prop() tabs: string[];
-  @Prop() onClick: (event: MouseEvent) => void;
-  @Prop() selectedTab: string;
+  @Prop() tabs: IFilters[];
+  @Prop() onChangeTab: (value: IFilters) => void;
+  @Prop() selectedTab: IFilters;
 
   renderDesctopFiltres() {
     return this.tabs.map(tab => (
@@ -22,8 +23,12 @@ export class TabBar {
     ));
   }
 
+  onClick = (e: MouseEvent) => {
+    this.onChangeTab(e.target['name'])
+  }
+
   renderMobileSelect() {
-    return <remteh-select />;
+    return <remteh-select selectedOption={this.selectedTab} options={this.tabs} onSelect={this.onChangeTab} />;
   }
 
   render() {

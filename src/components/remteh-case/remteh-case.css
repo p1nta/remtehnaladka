@@ -1,0 +1,38 @@
+:host {
+  display: block;
+}
+
+.case_wrapper {
+  padding: 192px 20px 151px;
+}
+
+.case_title {
+  font-size: 50px;
+  color: #041543;
+  letter-spacing: 1.16px;
+  line-height: 60px;
+  margin-bottom: 69px;
+}
+
+.m_width {
+  max-width: 784px;
+  width: 100%;
+  margin: 0 auto
+}
+
+.case_description {
+  margin-bottom: 78px;
+}
+
+.case_paragraph {
+  opacity: 0.6;
+  font-size: 16px;
+  color: #041543;
+  letter-spacing: 0.47px;
+  line-height: 30px;
+  margin-bottom: 15px
+}
+
+.case_paragraph:last-child {
+  margin-bottom: 0px;
+}

@@ -18,6 +18,7 @@ export type IFilters = 'All' | 'Industrial' | 'Civil' | 'Foreign';
   tag: 'tab-slider',
   styleUrl: 'tab-slider.css',
 })
+
 export class TabSlider {
   constructor() {
     document.querySelector('lang-method').getText().then((method) => {
@@ -39,14 +40,14 @@ export class TabSlider {
   slide = (slide: ISlide, key: number) => {
 
     return(
-      <a key={key} class="slide" href={slide.link}>
+      <stencil-route-link key={key} class="slide" url={slide.link}>
         <img
           class="slide_img"
           srcset={`${slide.path} 1x, ${slide.pathRetina} 2x`}
           src={slide.path}
         />
         <p class="slide_text">{this.getText(slide.textCode)}</p>
-      </a>
+      </stencil-route-link>
     )
   }
 

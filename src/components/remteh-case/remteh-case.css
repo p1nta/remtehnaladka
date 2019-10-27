@@ -3,7 +3,8 @@
 }
 
 .case_wrapper {
-  padding: 192px 20px 151px;
+  padding: 192px 0 0;
+  background: #F7F9FD;
 }
 
 .case_title {
@@ -14,10 +15,16 @@
   margin-bottom: 69px;
 }
 
-.m_width {
-  max-width: 784px;
+.case_slides {
+  font-size: 0;
+  padding: 0 0 134px;
+}
+
+.case_m_width {
+  max-width: 820px;
   width: 100%;
-  margin: 0 auto
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .case_description {
@@ -35,4 +42,63 @@
 
 .case_paragraph:last-child {
   margin-bottom: 0px;
+}
+
+.case_slide_img {
+  width: 100%;
+  margin-bottom: 18px;
+  object-fit: cover;
+}
+
+.case_slide_img:last-child {
+  margin-bottom: 0;
+}
+
+.case_link a {
+  font-size: 18px;
+  color: #F6B93A !important;
+  letter-spacing: 0.53px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  transition: opacity 0.3s;
+}
+
+.case_link a:hover {
+  opacity: 0.7;
+}
+
+.case_link {
+  display: block;
+  margin: 0 auto 151px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .case_wrapper {
+    padding: 144px 0 0;
+  }
+
+  .case_title {
+    font-size: 35px;
+    color: #041543;
+    letter-spacing: 1.13px;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
+
+  .case_description {
+    margin-bottom: 68px;
+  }
+
+  .case_slide_img {
+    margin-bottom: 20px;
+  }
+
+  .case_slides {
+    padding: 0 0 89px;
+  }
+
+  .case_link {
+    margin: 0 auto 96px;
+  }
 }

@@ -63,14 +63,14 @@ button {
 }
 
 html, body {
-  height: 100%;
   width: 100%;
   min-width: 320px;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  overflow: hidden;
-  font-family: 'Rubik-Roman', Arial, sans-serif;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Rubik', Arial, sans-serif;
 }
 
 .m_clicable {
@@ -80,4 +80,8 @@ html, body {
 
 .m_clicable:hover {
   opacity: 0.7;
+}
+
+.intent_mouse button {
+  outline: none !important;
 }

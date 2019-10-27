@@ -1,3 +1,60 @@
-.remteh-profile {
-  padding: 10px;
+.b_title {
+  position: relative;
+  display: flex;
+  min-height: 266px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.title_text {
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  line-height: 50px;
+  transform: translateY(-50%);
+  color: #FFFFFF; 
+  margin: 0;
+}
+
+.title_img_mobile {
+  display: none;
+}
+
+.progects {
+  background: #F7F9FD;
+}
+
+.content {
+  padding: 0 20px;
+  width: 100%;
+  border: solid #E4E9F3;
+  border-width: 0 0 1px;
+  box-sizing: border-box;
+}
+
+.title_img {
+  min-height: 100%;
+  object-fit: cover;
+  min-width: 100%;
+}
+
+.title_img_mobile {
+  display: block
+}
+
+.title_img:not(.title_img_mobile) {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .title_text {
+    font-size: 35px;
+    margin-top: 48px;
+  }
+
+  .b_title {
+    margin-bottom: 50px;
+  }
 }

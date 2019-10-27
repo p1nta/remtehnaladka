@@ -1,0 +1,72 @@
+:host {
+  display: block;
+}
+
+.contacts_wrapper {
+  width: 100%;
+  padding: 65px 20px 0;
+  box-sizing: border-box;
+}
+.contacts_container {
+  position: relative;
+  max-width: 630px;
+  width: 100%;
+  padding: 59px 0 168px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0 auto 47px
+}
+
+.description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.51px;
+  color: #041543;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.email {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.644286px;
+  text-decoration-line: underline;
+  color: #F6B93A;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.email:hover {
+  opacity: 0.7;
+}
+
+.phones {
+ margin: 51px auto 28px;
+}
+
+.adress, .phones {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.51px;
+  color: #041543;
+  max-width: 230px;
+}
+
+.adress {
+  margin: 0 auto
+}
+
+.arrow {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}

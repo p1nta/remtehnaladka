@@ -12,7 +12,7 @@ export class Home {
         <remteh-directions></remteh-directions>
         <remteh-what-we-do></remteh-what-we-do>
         <remteh-main-projects></remteh-main-projects>
-
+        <remteh-why-trust></remteh-why-trust>
         <remteh-contacts></remteh-contacts>
       </div>
     );

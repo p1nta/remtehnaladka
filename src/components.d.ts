@@ -33,6 +33,7 @@ export namespace Components {
   interface RemtehSelect {}
   interface RemtehTop {}
   interface RemtehWhatWeDo {}
+  interface RemtehWhyTrust {}
   interface TabBar {
     'onClick': (event: MouseEvent) => void;
     'selectedTab': string;
@@ -119,6 +120,12 @@ declare global {
     new (): HTMLRemtehWhatWeDoElement;
   };
 
+  interface HTMLRemtehWhyTrustElement extends Components.RemtehWhyTrust, HTMLStencilElement {}
+  const HTMLRemtehWhyTrustElement: {
+    prototype: HTMLRemtehWhyTrustElement;
+    new (): HTMLRemtehWhyTrustElement;
+  };
+
   interface HTMLTabBarElement extends Components.TabBar, HTMLStencilElement {}
   const HTMLTabBarElement: {
     prototype: HTMLTabBarElement;
@@ -143,6 +150,7 @@ declare global {
     'remteh-select': HTMLRemtehSelectElement;
     'remteh-top': HTMLRemtehTopElement;
     'remteh-what-we-do': HTMLRemtehWhatWeDoElement;
+    'remteh-why-trust': HTMLRemtehWhyTrustElement;
     'tab-bar': HTMLTabBarElement;
     'tab-slider': HTMLTabSliderElement;
   }
@@ -165,6 +173,7 @@ declare namespace LocalJSX {
   interface RemtehSelect {}
   interface RemtehTop {}
   interface RemtehWhatWeDo {}
+  interface RemtehWhyTrust {}
   interface TabBar {
     'onClick'?: (event: MouseEvent) => void;
     'selectedTab'?: string;
@@ -188,6 +197,7 @@ declare namespace LocalJSX {
     'remteh-select': RemtehSelect;
     'remteh-top': RemtehTop;
     'remteh-what-we-do': RemtehWhatWeDo;
+    'remteh-why-trust': RemtehWhyTrust;
     'tab-bar': TabBar;
     'tab-slider': TabSlider;
   }
@@ -211,6 +221,7 @@ declare module "@stencil/core" {
       'remteh-select': LocalJSX.RemtehSelect & JSXBase.HTMLAttributes<HTMLRemtehSelectElement>;
       'remteh-top': LocalJSX.RemtehTop & JSXBase.HTMLAttributes<HTMLRemtehTopElement>;
       'remteh-what-we-do': LocalJSX.RemtehWhatWeDo & JSXBase.HTMLAttributes<HTMLRemtehWhatWeDoElement>;
+      'remteh-why-trust': LocalJSX.RemtehWhyTrust & JSXBase.HTMLAttributes<HTMLRemtehWhyTrustElement>;
       'tab-bar': LocalJSX.TabBar & JSXBase.HTMLAttributes<HTMLTabBarElement>;
       'tab-slider': LocalJSX.TabSlider & JSXBase.HTMLAttributes<HTMLTabSliderElement>;
     }

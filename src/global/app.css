@@ -73,6 +73,15 @@ html, body {
   font-family: 'Rubik', Arial, sans-serif;
 }
 
+.m_clicable {
+  cursor: pointer;
+  transition: opacity 300ms;
+}
+
+.m_clicable:hover {
+  opacity: 0.7;
+}
+
 .intent_mouse button {
   outline: none !important;
 }

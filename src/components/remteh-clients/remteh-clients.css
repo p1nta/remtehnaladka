@@ -1,0 +1,56 @@
+.clients_wrapper {
+  padding: 100px;
+  background: pink;
+}
+
+.clients_title {
+  font-family: Charter-Roman;
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: 1.29px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.clients_logos_wrapper {
+  font-size: 0;
+  max-width: 760px;
+}
+
+.clients_img_container {
+width: 33%;
+display: inline-block;
+text-align: center;
+margin: 45px 0;
+}
+
+.clients_img_container::before {
+  vertical-align: middle;
+  content: '';
+  height: 100%;
+  display: inline-block;
+}
+
+.clients_img {
+  vertical-align: middle;
+}
+
+.clients_logos_wrapper .leoni {
+  width: 120px;
+}
+.clients_logos_wrapper .PGphase {
+  width: 87px;
+}
+.clients_logos_wrapper .geberit {
+  width: 160px;
+}
+.clients_logos_wrapper .kesz {
+  width: 87px;
+}
+.clients_logos_wrapper .kraft {
+  width: 144px;
+}
+.clients_logos_wrapper .roshen {
+  width: 172px;
+}

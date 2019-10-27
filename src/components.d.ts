@@ -20,6 +20,7 @@ export namespace Components {
   }
   interface RemtehAdvantages {}
   interface RemtehBottom {}
+  interface RemtehClients {}
   interface RemtehContacts {}
   interface RemtehDirections {}
   interface RemtehHeader {
@@ -65,6 +66,12 @@ declare global {
   const HTMLRemtehBottomElement: {
     prototype: HTMLRemtehBottomElement;
     new (): HTMLRemtehBottomElement;
+  };
+
+  interface HTMLRemtehClientsElement extends Components.RemtehClients, HTMLStencilElement {}
+  const HTMLRemtehClientsElement: {
+    prototype: HTMLRemtehClientsElement;
+    new (): HTMLRemtehClientsElement;
   };
 
   interface HTMLRemtehContactsElement extends Components.RemtehContacts, HTMLStencilElement {}
@@ -148,6 +155,7 @@ declare global {
     'lang-method': HTMLLangMethodElement;
     'remteh-advantages': HTMLRemtehAdvantagesElement;
     'remteh-bottom': HTMLRemtehBottomElement;
+    'remteh-clients': HTMLRemtehClientsElement;
     'remteh-contacts': HTMLRemtehContactsElement;
     'remteh-directions': HTMLRemtehDirectionsElement;
     'remteh-header': HTMLRemtehHeaderElement;
@@ -168,6 +176,7 @@ declare namespace LocalJSX {
   interface LangMethod {}
   interface RemtehAdvantages {}
   interface RemtehBottom {}
+  interface RemtehClients {}
   interface RemtehContacts {}
   interface RemtehDirections {}
   interface RemtehHeader {
@@ -197,6 +206,7 @@ declare namespace LocalJSX {
     'lang-method': LangMethod;
     'remteh-advantages': RemtehAdvantages;
     'remteh-bottom': RemtehBottom;
+    'remteh-clients': RemtehClients;
     'remteh-contacts': RemtehContacts;
     'remteh-directions': RemtehDirections;
     'remteh-header': RemtehHeader;
@@ -222,6 +232,7 @@ declare module "@stencil/core" {
       'lang-method': LocalJSX.LangMethod & JSXBase.HTMLAttributes<HTMLLangMethodElement>;
       'remteh-advantages': LocalJSX.RemtehAdvantages & JSXBase.HTMLAttributes<HTMLRemtehAdvantagesElement>;
       'remteh-bottom': LocalJSX.RemtehBottom & JSXBase.HTMLAttributes<HTMLRemtehBottomElement>;
+      'remteh-clients': LocalJSX.RemtehClients & JSXBase.HTMLAttributes<HTMLRemtehClientsElement>;
       'remteh-contacts': LocalJSX.RemtehContacts & JSXBase.HTMLAttributes<HTMLRemtehContactsElement>;
       'remteh-directions': LocalJSX.RemtehDirections & JSXBase.HTMLAttributes<HTMLRemtehDirectionsElement>;
       'remteh-header': LocalJSX.RemtehHeader & JSXBase.HTMLAttributes<HTMLRemtehHeaderElement>;

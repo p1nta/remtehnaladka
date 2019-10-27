@@ -6,6 +6,7 @@ import * as Constants from '../../constants';
   tag: 'remteh-case',
   styleUrl: 'remteh-case.css',
 })
+
 export class RemtehCase {
   constructor() {
     const tag = document.querySelector('lang-method');
@@ -34,7 +35,7 @@ export class RemtehCase {
     const imagesRetina = Constants.caseImg[`${this.case}Retina`];
 
     return (
-      <div class="slides">
+      <div class="case_slides">
         {images.map((path: string, index: number) =>
           (
             <img
@@ -62,10 +63,17 @@ export class RemtehCase {
     return (
       <div class="case_wrapper">
         <remteh-header mode="Case" />
-        <div class="m_width">
+        <div class="case_m_width">
           {this.renderTitle()}
           {this.renderDescription()}
           {this.renderSlides()}
+          <stencil-route-link
+            url="/projects"
+            class="case_link"
+            exact={true}
+          >
+            {this.getText('caseShowAllButton')}
+          </stencil-route-link>
         </div>
         <remteh-bottom />
       </div>

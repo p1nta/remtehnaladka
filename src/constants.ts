@@ -5,9 +5,9 @@ export const projectsHeadeMobileX2 = './assets/img/projects_header_mobile_x2.png
 
 export const caseImg = {
   Roshen: [
-    './assets/img/roshen.png',
-    './assets/img/roshen.png',
-    './assets/img/roshen.png',
+    './assets/img/roshen_x1.png',
+    './assets/img/roshen_x1.png',
+    './assets/img/roshen_x1.png',
   ],
   RoshenRetina: [
     './assets/img/roshen_x2.png',

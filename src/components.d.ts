@@ -18,6 +18,7 @@ export namespace Components {
     'match': MatchResults;
   }
   interface RemtehRoot {}
+  interface RemtehTop {}
 }
 
 declare global {
@@ -46,11 +47,18 @@ declare global {
     prototype: HTMLRemtehRootElement;
     new (): HTMLRemtehRootElement;
   };
+
+  interface HTMLRemtehTopElement extends Components.RemtehTop, HTMLStencilElement {}
+  const HTMLRemtehTopElement: {
+    prototype: HTMLRemtehTopElement;
+    new (): HTMLRemtehTopElement;
+  };
   interface HTMLElementTagNameMap {
     'remteh-contacts': HTMLRemtehContactsElement;
     'remteh-home': HTMLRemtehHomeElement;
     'remteh-projects': HTMLRemtehProjectsElement;
     'remteh-root': HTMLRemtehRootElement;
+    'remteh-top': HTMLRemtehTopElement;
   }
 }
 
@@ -61,12 +69,14 @@ declare namespace LocalJSX {
     'match'?: MatchResults;
   }
   interface RemtehRoot {}
+  interface RemtehTop {}
 
   interface IntrinsicElements {
     'remteh-contacts': RemtehContacts;
     'remteh-home': RemtehHome;
     'remteh-projects': RemtehProjects;
     'remteh-root': RemtehRoot;
+    'remteh-top': RemtehTop;
   }
 }
 
@@ -80,6 +90,7 @@ declare module "@stencil/core" {
       'remteh-home': LocalJSX.RemtehHome & JSXBase.HTMLAttributes<HTMLRemtehHomeElement>;
       'remteh-projects': LocalJSX.RemtehProjects & JSXBase.HTMLAttributes<HTMLRemtehProjectsElement>;
       'remteh-root': LocalJSX.RemtehRoot & JSXBase.HTMLAttributes<HTMLRemtehRootElement>;
+      'remteh-top': LocalJSX.RemtehTop & JSXBase.HTMLAttributes<HTMLRemtehTopElement>;
     }
   }
 }

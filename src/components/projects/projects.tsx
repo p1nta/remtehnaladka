@@ -4,7 +4,6 @@ import { MatchResults } from '@stencil/router';
 @Component({
   tag: 'remteh-projects',
   styleUrl: 'projects.css',
-  shadow: true
 })
 export class Projects {
   @Prop() match: MatchResults;

@@ -10,23 +10,61 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 import {
   MatchResults,
 } from '@stencil/router';
+import {
+  ISlideFilter,
+} from './components/tab-slider/tab-slider';
 
 export namespace Components {
+  interface LangMethod {
+    'getText': () => Promise<(key: string) => any>;
+  }
+  interface RemtehBottom {}
   interface RemtehContacts {}
+  interface RemtehHeader {
+    'mode': 'Home' | 'Projects' | 'Case';
+  }
   interface RemtehHome {}
   interface RemtehProjects {
     'match': MatchResults;
   }
   interface RemtehRoot {}
+  interface RemtehSelect {}
+  interface TabBar {
+    'onClick': (event: MouseEvent) => void;
+    'selectedTab': string;
+    'tabs': string[];
+  }
+  interface TabSlider {
+    'slides': ISlideFilter;
+    'tabs': string[];
+  }
 }
 
 declare global {
 
 
+  interface HTMLLangMethodElement extends Components.LangMethod, HTMLStencilElement {}
+  const HTMLLangMethodElement: {
+    prototype: HTMLLangMethodElement;
+    new (): HTMLLangMethodElement;
+  };
+
+  interface HTMLRemtehBottomElement extends Components.RemtehBottom, HTMLStencilElement {}
+  const HTMLRemtehBottomElement: {
+    prototype: HTMLRemtehBottomElement;
+    new (): HTMLRemtehBottomElement;
+  };
+
   interface HTMLRemtehContactsElement extends Components.RemtehContacts, HTMLStencilElement {}
   const HTMLRemtehContactsElement: {
     prototype: HTMLRemtehContactsElement;
     new (): HTMLRemtehContactsElement;
+  };
+
+  interface HTMLRemtehHeaderElement extends Components.RemtehHeader, HTMLStencilElement {}
+  const HTMLRemtehHeaderElement: {
+    prototype: HTMLRemtehHeaderElement;
+    new (): HTMLRemtehHeaderElement;
   };
 
   interface HTMLRemtehHomeElement extends Components.RemtehHome, HTMLStencilElement {}
@@ -46,27 +84,72 @@ declare global {
     prototype: HTMLRemtehRootElement;
     new (): HTMLRemtehRootElement;
   };
+
+  interface HTMLRemtehSelectElement extends Components.RemtehSelect, HTMLStencilElement {}
+  const HTMLRemtehSelectElement: {
+    prototype: HTMLRemtehSelectElement;
+    new (): HTMLRemtehSelectElement;
+  };
+
+  interface HTMLTabBarElement extends Components.TabBar, HTMLStencilElement {}
+  const HTMLTabBarElement: {
+    prototype: HTMLTabBarElement;
+    new (): HTMLTabBarElement;
+  };
+
+  interface HTMLTabSliderElement extends Components.TabSlider, HTMLStencilElement {}
+  const HTMLTabSliderElement: {
+    prototype: HTMLTabSliderElement;
+    new (): HTMLTabSliderElement;
+  };
   interface HTMLElementTagNameMap {
+    'lang-method': HTMLLangMethodElement;
+    'remteh-bottom': HTMLRemtehBottomElement;
     'remteh-contacts': HTMLRemtehContactsElement;
+    'remteh-header': HTMLRemtehHeaderElement;
     'remteh-home': HTMLRemtehHomeElement;
     'remteh-projects': HTMLRemtehProjectsElement;
     'remteh-root': HTMLRemtehRootElement;
+    'remteh-select': HTMLRemtehSelectElement;
+    'tab-bar': HTMLTabBarElement;
+    'tab-slider': HTMLTabSliderElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface LangMethod {}
+  interface RemtehBottom {}
   interface RemtehContacts {}
+  interface RemtehHeader {
+    'mode'?: 'Home' | 'Projects' | 'Case';
+  }
   interface RemtehHome {}
   interface RemtehProjects {
     'match'?: MatchResults;
   }
   interface RemtehRoot {}
+  interface RemtehSelect {}
+  interface TabBar {
+    'onClick'?: (event: MouseEvent) => void;
+    'selectedTab'?: string;
+    'tabs'?: string[];
+  }
+  interface TabSlider {
+    'slides'?: ISlideFilter;
+    'tabs'?: string[];
+  }
 
   interface IntrinsicElements {
+    'lang-method': LangMethod;
+    'remteh-bottom': RemtehBottom;
     'remteh-contacts': RemtehContacts;
+    'remteh-header': RemtehHeader;
     'remteh-home': RemtehHome;
     'remteh-projects': RemtehProjects;
     'remteh-root': RemtehRoot;
+    'remteh-select': RemtehSelect;
+    'tab-bar': TabBar;
+    'tab-slider': TabSlider;
   }
 }
 
@@ -76,10 +159,16 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'lang-method': LocalJSX.LangMethod & JSXBase.HTMLAttributes<HTMLLangMethodElement>;
+      'remteh-bottom': LocalJSX.RemtehBottom & JSXBase.HTMLAttributes<HTMLRemtehBottomElement>;
       'remteh-contacts': LocalJSX.RemtehContacts & JSXBase.HTMLAttributes<HTMLRemtehContactsElement>;
+      'remteh-header': LocalJSX.RemtehHeader & JSXBase.HTMLAttributes<HTMLRemtehHeaderElement>;
       'remteh-home': LocalJSX.RemtehHome & JSXBase.HTMLAttributes<HTMLRemtehHomeElement>;
       'remteh-projects': LocalJSX.RemtehProjects & JSXBase.HTMLAttributes<HTMLRemtehProjectsElement>;
       'remteh-root': LocalJSX.RemtehRoot & JSXBase.HTMLAttributes<HTMLRemtehRootElement>;
+      'remteh-select': LocalJSX.RemtehSelect & JSXBase.HTMLAttributes<HTMLRemtehSelectElement>;
+      'tab-bar': LocalJSX.TabBar & JSXBase.HTMLAttributes<HTMLTabBarElement>;
+      'tab-slider': LocalJSX.TabSlider & JSXBase.HTMLAttributes<HTMLTabSliderElement>;
     }
   }
 }

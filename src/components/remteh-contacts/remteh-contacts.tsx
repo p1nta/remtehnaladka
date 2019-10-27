@@ -1,25 +1,35 @@
 import { Component, h } from '@stencil/core';
 
+import svgArrow from '../../assets/svg/arrow.svg';
+
 @Component({
   tag: 'remteh-contacts',
   styleUrl: 'remteh-contacts.css',
-  shadow: true
+  // shadow: true
 })
 export class RemtehContacts {
+  constructor() {
+    document.querySelector('lang-method').getText().then((method) => {
+      this.getText = method;
+    });
+  }
+
+  getText: (key: string) => void;
 
   render() {
     return (
-      <div>
-        <div>
-          <h3 class="title">
-            Контакты
-          </h3>
+      <div class="contacts_wrapper">
+        <div class="contacts_container">
+          <img src={svgArrow} class="arrow" />
+          <p class="title">
+            {this.getText('contactsTitle')}
+          </p>
           <p class="description">
-            Связаться с нами:
+            {this.getText('contactsContactUs')}
           </p>
           <a
             class="email"
-            href=""
+            href="mailto:info@rtn.com.ua"
           >
             info@rtn.com.ua
           </a>
@@ -29,9 +39,7 @@ export class RemtehContacts {
             +38 (097) 535-12-83
           </p>
           <p class="adress">
-            г. Полтава, Украина
-            <br/>
-            Первомайский п-кт, 19
+            {this.getText('contactsAddres')}
           </p>
         </div>
       </div>

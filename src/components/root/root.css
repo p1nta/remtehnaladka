@@ -1,15 +1,78 @@
-header {
-  background: #5851ff;
-  color: white;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/rubik_bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-h1 {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #fff;
-  padding: 0 12px;
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/rubik_semibold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/rubik_regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  word-break: break-word;
+  outline-color: #c4d8f7;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input, textarea {
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important;
+  font-family: inherit;
+  outline: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+html, body {
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Rubik', Arial, sans-serif;
+}
+
+.intent_mouse button {
+  outline: none !important;
 }

@@ -1,0 +1,56 @@
+{
+  "Industrial": [
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    },
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    },
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    },
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    },
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    }
+  ],
+  "Civil": [
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    }
+  ],
+  "Foreign": [
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    },
+    {
+      "path": "../../assets/img/roshen.png",
+      "pathRetina": "../../assets/img/roshen_x2.png",
+      "link": "/",
+      "textCode": "slideRoshen"
+    }
+  ]
+}

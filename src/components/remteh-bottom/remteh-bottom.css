@@ -1,0 +1,23 @@
+:host {
+  display: block;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  background: #FFFFFF;
+  padding: 0 37px 0 43px;
+}
+
+.logo {
+  height: 22px;
+}
+
+.company_name {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.7182px;
+  color: #6988CC;
+}

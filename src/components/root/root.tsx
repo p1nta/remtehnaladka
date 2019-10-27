@@ -1,19 +1,22 @@
 import { Component, h } from '@stencil/core';
-
+import OutlineController from '../outline';
 
 @Component({
   tag: 'remteh-root',
   styleUrl: 'root.css',
-  shadow: true
+  // shadow: true
 })
 export class AppRoot {
+  componentWillLoad() {
+    new OutlineController();
+  }
 
   render() {
     return (
-      <div>
-        <header>
+      <div id="wrapper">
+        {/* <header>
           <h1>REMTEHNALADKA</h1>
-        </header>
+        </header> */}
 
         <main>
           <stencil-router>

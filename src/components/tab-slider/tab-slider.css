@@ -63,6 +63,7 @@
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.3s;
+  text-align: center;
 }
 
 .slide:last-child {
@@ -80,6 +81,8 @@
 }
 
 .slide_img {
+  box-shadow: 0px 0px 10px rgba(105, 136, 204, 0.179942);
+  border-radius: 12px;
   width: 100%;
 }
 

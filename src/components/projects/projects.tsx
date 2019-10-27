@@ -9,6 +9,7 @@ import * as slides from './slides.json';
   tag: 'remteh-projects',
   styleUrl: 'projects.css',
 })
+
 export class Projects {
   constructor() {
     document.querySelector('lang-method').getText().then((method) => {

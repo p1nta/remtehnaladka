@@ -18,7 +18,12 @@
 }
 
 .title {
+  font-family: Charter-Roman;
   font-size: 40px;
+  color: #041543;
+  letter-spacing: 1.29px;
+  text-align: center;
+  line-height: 40px;
   margin: 0 auto 47px
 }
 
@@ -34,12 +39,14 @@
 
 .email {
   font-size: 22px;
-  line-height: 30px;
-  letter-spacing: 0.644286px;
   text-decoration-line: underline;
   color: #F6B93A;
   cursor: pointer;
   transition: opacity 0.3s;
+  font-family: Charter-Roman;
+  letter-spacing: 0.64px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .email:hover {

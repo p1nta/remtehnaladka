@@ -111,7 +111,6 @@
   text-decoration: underline;
 }
 
-
 @media only screen and (max-width: 1024px) {
   .projects_main_top_part {
     padding: 330px 50px 220px;
@@ -119,5 +118,47 @@
 
   .projects_main_bottom_part {
     padding: 0 50px 190px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .projects_main_achievements {
+    display: block;
+  }
+
+  .projects_main_bottom_part {
+    padding: 0 20px 190px;
+  }
+
+  .projects_main_achievement_item {
+    margin: 0 auto 64px;
+  }
+
+  .projects_main_achievement_item:last-child {
+    margin-bottom: 0;
+  }
+
+  .projects_main_achievement_item_count {
+    font-family: Charter-Light;
+    margin-bottom: 10px;
+  }
+
+  .projects_main_examples {
+    display: block;
+    transform: translateY(-65px);
+  }
+
+  .projects_main_example_item {
+    width: 100%;
+    margin: 0 0 75px;
+    max-width: 100%;
+  }
+
+  .projects_main_example_item:last-child {
+    margin-bottom: 0;
+  }
+
+  .projects_main_example_item_image {
+    margin-bottom: 25px;
   }
 }

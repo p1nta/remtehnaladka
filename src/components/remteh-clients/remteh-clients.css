@@ -40,20 +40,48 @@ margin: 45px 0;
 }
 
 .clients_logos_wrapper .leoni {
+  max-width: 100%;
   width: 120px;
 }
 .clients_logos_wrapper .PGphase {
+  max-width: 100%;
   width: 87px;
 }
 .clients_logos_wrapper .geberit {
+  max-width: 100%;
   width: 160px;
 }
 .clients_logos_wrapper .kesz {
+  max-width: 100%;
   width: 87px;
 }
 .clients_logos_wrapper .kraft {
+  max-width: 100%;
   width: 144px;
 }
 .clients_logos_wrapper .roshen {
+  max-width: 100%;
   width: 172px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .clients_wrapper {
+    padding: 330px 50px 150px;   
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .clients_wrapper {
+    padding: 330px 20px 150px;   
+  }
+
+  .clients_title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .clients_img_container {
+    width: 50%;
+    padding: 0 10px;
+  }
 }

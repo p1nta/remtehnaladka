@@ -109,3 +109,31 @@
     margin: 0 0 40px;
   }
 }
+
+@media only screen and (max-width: 736px) {
+  .directions_wrapper {
+    padding: 50px 20px;
+  }
+
+  .directions_item {
+    width: 100%;
+    margin: 0 0 40px;
+  }
+
+  .directions_item:last-child {
+    margin-bottom: 0;
+  }
+
+  .directions_item_text {
+    padding-bottom: 60px;
+  }
+
+  .directions_item_title {
+    height: auto;
+  }
+
+  .directions_item_description {
+    margin-bottom: 40px;
+    height: auto;
+  }
+}

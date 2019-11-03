@@ -79,3 +79,26 @@
     padding: 70px 50px 190px;
   }
 }
+
+@media only screen and (max-width: 736px) {
+  .what_we_do_wrapper {
+    padding: 50px 20px 250px;
+  }
+  .what_we_do_items_wrapper {
+    display: block;
+    width: 100%;
+  }
+  .what_we_do_items_column {
+    width: 100%;
+    margin: 0 0 40px;
+    display: block;
+  }
+
+  .what_we_do_items_column:last-child {
+    margin-bottom: 0;
+  }
+
+  .what_we_do_item {
+    max-width: 100%;
+  }
+}

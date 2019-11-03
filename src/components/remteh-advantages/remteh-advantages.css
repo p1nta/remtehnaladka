@@ -95,3 +95,39 @@
     height: 35%;
   }
 }
+
+@media only screen and (max-width: 736px) {
+  .advantages_wrapper {
+    padding: 330px 20px 200px;   
+  }
+
+  .advantages_title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+
+  .advantages_item {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0 !important;
+    transform: translateY(0) !important;
+    padding: 30px;
+    height: auto;
+  }
+
+  .advantages_item_img_wrapper {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+  }
+
+  .advantages_item_text {
+    text-align: left;
+    width: 70%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0;
+    padding-left: 30px;
+  }
+}

@@ -110,3 +110,14 @@
   line-height: 30px;
   text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .projects_main_top_part {
+    padding: 330px 50px 220px;
+  }
+
+  .projects_main_bottom_part {
+    padding: 0 50px 190px;
+  }
+}

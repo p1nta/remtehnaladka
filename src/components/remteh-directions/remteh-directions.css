@@ -17,6 +17,7 @@
   margin-top: 20px;
   padding: 75px 0 ;
   font-size: 0;
+  text-align: center;
 }
 
 .directions_item {
@@ -83,4 +84,28 @@
   text-align: center;
   line-height: 30px;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1360px) {
+  .directions_item_text {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .directions_wrapper {
+    padding: 70px 50px;
+  }
+
+  .directions_items_wrapper {
+    padding-bottom: 0;
+  }
+
+  .directions_item {
+    width: calc((100% - 80px) / 2);;
+  }
+  .directions_item:nth-child(2) {
+    transform: translateY(0) !important;
+    margin: 0 0 40px;
+  }
 }

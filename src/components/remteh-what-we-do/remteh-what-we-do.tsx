@@ -67,7 +67,14 @@ export class RemtehWhatWeDo {
             Что мы делаем
           </h2>
           <div class="what_we_do_items_wrapper">
-            {this.Elements.map(this.renderItem)}
+            <div class="what_we_do_items_column">
+              {this.renderItem(this.Elements[0])}
+              {this.renderItem(this.Elements[1])}
+            </div>
+            <div class="what_we_do_items_column">
+              {this.renderItem(this.Elements[2])}
+              {this.renderItem(this.Elements[3])}
+            </div>
           </div>
         </div>
       </div>

@@ -41,3 +41,9 @@
   margin-top: 40px;
   max-width: 570px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .top_part_text {
+    padding: 160px 50px;
+  }
+}

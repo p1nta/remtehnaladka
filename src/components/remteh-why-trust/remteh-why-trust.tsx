@@ -13,11 +13,13 @@ export class RemtehWhyTrust {
           Почему нам доверяют
         </h3>
         <div class="why_trust_first">
-          <img
-            src="../../assets/img/build_process_x2.png"
-            alt=""
-            class="why_trust_first_img"
-          />
+          <div class="why_trust_image_block">
+            <img
+              src="../../assets/img/build_process_x2.png"
+              alt=""
+              class="why_trust_first_img"
+            />
+          </div>
           <div class="why_trust_first_text">
             <h4 class="why_trust_item_title">
               Компетентная команда
@@ -43,11 +45,13 @@ export class RemtehWhyTrust {
               генерального подрядчика; выполнение проектных работ; выполнение функций заказчика-застройщика.
             </p>
           </div>
-          <img
-            src="../../assets/img/documentation_x2.png"
-            alt=""
-            class="why_trust_second_img"
-          />
+          <div class="why_trust_image_block">
+            <img
+              src="../../assets/img/documentation_x2.png"
+              alt=""
+              class="why_trust_second_img"
+            />
+          </div>
         </div>
       </div>
     );

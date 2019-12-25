@@ -18,6 +18,10 @@
   height: 102px;
 }
 
+.home_header .left_group {
+  pointer-events:  none;
+}
+
 .case_header {
   position: fixed;
   height: 80px !important;

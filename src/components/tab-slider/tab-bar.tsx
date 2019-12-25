@@ -11,6 +11,13 @@ export class TabBar {
   @Prop() onChangeTab: (value: IFilters) => void;
   @Prop() selectedTab: IFilters;
 
+  filterTexts = {
+    All: 'Все объекты',
+    Industrial: 'Промышленные объекты',
+    Civil: 'Гражданские объекты',
+    Foreign: 'Иностранный заказчик',
+  }
+
   renderDesctopFiltres() {
     return this.tabs.map(tab => (
       <button
@@ -18,7 +25,7 @@ export class TabBar {
         name={tab}
         onClick={this.onClick}
       >
-        <p class="tab_text">{tab}</p>
+        <p class="tab_text">{this.filterTexts[tab]}</p>
       </button>
     ));
   }

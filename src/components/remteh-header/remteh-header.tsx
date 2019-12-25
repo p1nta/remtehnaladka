@@ -29,14 +29,13 @@ export class RemtehHeader {
     });
   }
 
-  componentWillLoad() {
-    this.toContacts && window.scrollTo(0, 0);
+  componentDidUnload() {
+    window.scrollTo(0, 0);
   }
 
   componentDidLoad() {
-    if (this.toContacts) {
+    if (this.toContacts && this.mode !== 'Home') {
       this.onClickContacts();
-      window.history.replaceState(null, null, window.location.pathname);
       this.toContacts = false;
     };
   }
@@ -53,7 +52,8 @@ export class RemtehHeader {
       (
         <button class="header_button" onClick={this.onClickContacts}>{this.getText('headerContacts')}</button>
       ) : (
-        <stencil-route-link url="/?contacts" class="header_button" exact={true}>{this.getText('headerContacts')}</stencil-route-link>
+        // <stencil-route-link url="/#cc" class="header_button" exact={true}>{this.getText('headerContacts')}</stencil-route-link>
+        <a href="/#contacts" class="header_button">{this.getText('headerContacts')}</a>
       )
 
 

@@ -18,7 +18,7 @@ export class RemtehContacts {
 
   render() {
     return (
-      <div class="contacts_wrapper">
+      <div class="contacts_wrapper" id="contacts">
         <div class="contacts_container">
           <img src={svgArrow} class="arrow" />
           <p class="title">

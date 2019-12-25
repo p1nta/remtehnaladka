@@ -37,7 +37,8 @@
   color: #041543;
   letter-spacing: 0.47px;
   line-height: 30px;
-  margin-bottom: 15px
+  margin-bottom: 30px;
+  font-family: Rubik-Light;
 }
 
 .case_paragraph:last-child {
@@ -84,6 +85,7 @@
     letter-spacing: 1.13px;
     line-height: 45px;
     margin-bottom: 40px;
+    font-family: Charter-Roman;
   }
 
   .case_description {

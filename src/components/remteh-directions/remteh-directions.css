@@ -23,7 +23,7 @@
 .directions_item {
   text-align: center;
   width: calc((100% - 80px) / 3);
-  box-shadow: 0 0 10px 0 rgba(105,136,204,0.07);
+  box-shadow: 0 0 20px 0 rgba(105,136,204,0.4);
   border-radius: 12px;
   display: inline-block;
   margin-right: 40px;
@@ -52,12 +52,7 @@
   letter-spacing: 0.76px;
   text-align: center;
   line-height: 30px;
-  height: 90px;
   margin-bottom: 33px;
-}
-
-.directions_item:nth-child(2) .directions_item_title {
-  height: 60px;
 }
 
 .directions_item_description {
@@ -126,10 +121,6 @@
 
   .directions_item_text {
     padding-bottom: 60px;
-  }
-
-  .directions_item_title {
-    height: auto;
   }
 
   .directions_item_description {

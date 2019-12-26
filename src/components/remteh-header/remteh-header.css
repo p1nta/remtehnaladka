@@ -2,6 +2,15 @@
   display: block;
 }
 
+@keyframes findIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .header_container {
   top: 0;
   left: 0;
@@ -16,10 +25,16 @@
 .home_header, .projects_header  {
   position: absolute;
   height: 102px;
+  transition: background-color 0.3s;
+  background-color: transparent;
 }
 
 .home_header .left_group {
   pointer-events:  none;
+}
+
+.show_header {
+  animation: findIn 0.3s alternate forwards;
 }
 
 .case_header {
@@ -126,7 +141,7 @@
   }
 
   .projects_header {
-    padding: 0 14px 0 20px;
+    padding: 0 20px;
   }
 
 }

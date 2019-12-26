@@ -5,19 +5,36 @@ import logo from '../../assets/svg/logo.svg';
 @Component({
   tag: 'remteh-header',
   styleUrl: 'remteh-header.css',
-  // shadow: true
 })
 export class RemtehHeader {
   constructor() {
     document.querySelector('lang-method').getText().then((method) => {
       this.getText = method;
     });
+
+    window.addEventListener('scroll', this.onScroll);
   }
 
   getText: (key: string) => void;
+  headerRef: any;
 
   @Prop() mode: 'Home' | 'Projects' | 'Case';
   @State() toContacts = window.location.search === '?contacts'
+  @State() isScrolled = window.location.search === '?contacts'
+
+  onScroll = () => {
+    if(this.mode === 'Case') {
+      return;
+    }
+    if (window.scrollY > 20 && !this.isScrolled) {
+      this.isScrolled = true;
+      this.headerRef.classList.add('show_header');
+    }
+    if (window.scrollY < 20 && this.isScrolled) {
+      this.isScrolled = false;
+      this.headerRef.classList.remove('show_header');
+    }
+  }
 
   onClickContacts() {
     const contactsCoordinates = document.getElementsByTagName('remteh-bottom')[0].offsetTop;
@@ -43,23 +60,20 @@ export class RemtehHeader {
   render() {
     const headerStyle = {
       'header_container': true,
-      'home_header': this.mode === 'Home',
-      'projects_header': this.mode === 'Projects',
-      'case_header': this.mode === 'Case',
+      'home_header': this.mode === 'Home' && !this.isScrolled,
+      'projects_header': this.mode === 'Projects' && !this.isScrolled,
+      'case_header': this.mode === 'Case' || this.isScrolled,
     }
     const notCaseLocation = window.location.pathname === '/' || window.location.pathname === '/projects';
     const buttonContact = notCaseLocation ?
       (
         <button class="header_button" onClick={this.onClickContacts}>{this.getText('headerContacts')}</button>
       ) : (
-        // <stencil-route-link url="/#cc" class="header_button" exact={true}>{this.getText('headerContacts')}</stencil-route-link>
         <a href="/#contacts" class="header_button">{this.getText('headerContacts')}</a>
       )
 
-
-
     return (
-      <header class={headerStyle}>
+      <header ref={el => this.headerRef = el} class={headerStyle}>
         <a
           class="left_group"
           href="/"

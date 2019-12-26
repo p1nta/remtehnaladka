@@ -94,3 +94,28 @@ html, body {
 .intent_mouse button {
   outline: none !important;
 }
+
+/* .fade_in_section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade_in_section.is_visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+} */
+
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+.fade-in-element {
+animation: fade-in 1.4s;
+}
+
+.hidden {
+  opacity: 0;
+}

@@ -78,12 +78,14 @@ export class Remtehdirections {
   render() {
     return (
       <div class="directions_wrapper">
-        <h2 class="directions_title">
-          Наши направления
-        </h2>
-        <div class="directions_items_wrapper">
-          {this.Elements.map(this.renderItem)}
-        </div>
+        <nice-anim>
+          <h2 class="directions_title">
+            Наши направления
+          </h2>
+          <div class="directions_items_wrapper">
+            {this.Elements.map(this.renderItem)}
+          </div>
+        </nice-anim>
       </div>
     );
   }

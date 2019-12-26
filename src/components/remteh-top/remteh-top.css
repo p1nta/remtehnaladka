@@ -10,12 +10,6 @@
   z-index: 7;
 }
 
-.top_part_bg {
-  min-height: 100%;
-  object-fit: cover;
-  min-width: 100%;
-}
-
 .top_part_title {
   font-family: Charter-Roman;
   font-size: 50px;

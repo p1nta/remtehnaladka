@@ -77,23 +77,27 @@ export class RemtehMainProjects {
     return (
       <div class="projects_main_wrapper">
         <div class="projects_main_top_part">
-          <h3 class="projects_main_title">
-            Проекты
-          </h3>
-          <div class="projects_main_achievements">
-            {this.achievementElements.map(this.renderAchievementsItem)}
-          </div>
+          <nice-anim>
+            <h3 class="projects_main_title">
+              Проекты
+            </h3>
+            <div class="projects_main_achievements">
+              {this.achievementElements.map(this.renderAchievementsItem)}
+            </div>
+          </nice-anim>
         </div>
         <div class="projects_main_bottom_part">
-          <div class="projects_main_examples">
-            {this.exampleElements.map(this.renderExampleItem)}
-          </div>
-          <a
-            href="/projects"
-            class="projects_main_all_link m_clicable"
-          >
-            Посмотреть все проекты
-          </a>
+          <nice-anim>
+            <div class="projects_main_examples">
+              {this.exampleElements.map(this.renderExampleItem)}
+            </div>
+            <a
+              href="/projects"
+              class="projects_main_all_link m_clicable"
+            >
+              Посмотреть все проекты
+            </a>
+          </nice-anim>
         </div>
       </div>
     );

@@ -63,19 +63,21 @@ export class RemtehWhatWeDo {
       <div class="what_we_do_background">
         <remteh-directions></remteh-directions>
         <div class="what_we_do_wrapper">
+          <nice-anim>
           <h2 class="what_we_do_title">
-            Что мы делаем
-          </h2>
-          <div class="what_we_do_items_wrapper">
-            <div class="what_we_do_items_column">
-              {this.renderItem(this.Elements[0])}
-              {this.renderItem(this.Elements[1])}
+              Что мы делаем
+            </h2>
+            <div class="what_we_do_items_wrapper">
+              <div class="what_we_do_items_column">
+                {this.renderItem(this.Elements[0])}
+                {this.renderItem(this.Elements[1])}
+              </div>
+              <div class="what_we_do_items_column">
+                {this.renderItem(this.Elements[2])}
+                {this.renderItem(this.Elements[3])}
+              </div>
             </div>
-            <div class="what_we_do_items_column">
-              {this.renderItem(this.Elements[2])}
-              {this.renderItem(this.Elements[3])}
-            </div>
-          </div>
+          </nice-anim>
         </div>
       </div>
     );

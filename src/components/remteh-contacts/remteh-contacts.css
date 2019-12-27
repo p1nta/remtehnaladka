@@ -9,9 +9,9 @@
 }
 .contacts_container {
   position: relative;
-  max-width: 630px;
+  max-width: 650px;
   width: 100%;
-  padding: 59px 0 168px;
+  padding: 59px 0 161px;
   text-align: center;
   margin: 0 auto;
   overflow: hidden;
@@ -76,4 +76,36 @@
   top: 0;
   left: 0;
   pointer-events: none;
+}
+
+@media (max-width: 500px) {
+  .contacts_wrapper {
+    padding: 30px 20px 0;
+  }
+
+  .title {
+    font-size: 35px;
+    letter-spacing: 0.65px;
+  }
+
+  .description {
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    margin-bottom: 3px;
+  }
+
+  .email {
+    letter-spacing: 2.2px;
+    font-size: 22px;
+  }
+
+  .phones, .adress {
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.91px;
+  }
+
+  .phones {
+    margin: 41px auto 32px;
+  }
 }

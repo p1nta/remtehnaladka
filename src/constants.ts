@@ -13,5 +13,13 @@ export const caseImg = {
     './assets/img/roshen_x2.png',
     './assets/img/roshen_x2.png',
     './assets/img/roshen_x2.png'
+  ],
+  Budfarfor: [
+    './assets/img/Budfarfor_2.png',
+    './assets/img/Budfarfor_3.png',
+    './assets/img/Budfarfor_4.png',
+    './assets/img/Budfarfor_1.png',
+    './assets/img/Budfarfor_5.jpg',
+    './assets/img/Budfarfor_6.png',
   ]
 };

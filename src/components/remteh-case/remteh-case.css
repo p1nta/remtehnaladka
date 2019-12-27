@@ -8,10 +8,11 @@
 }
 
 .case_title {
-  font-size: 50px;
+  font-size: 48px;
   color: #041543;
-  letter-spacing: 1.16px;
+  letter-spacing: 2.16px;
   line-height: 60px;
+  font-family: Charter-Roman;
   margin-bottom: 69px;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .case_m_width {
-  max-width: 820px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -38,7 +39,7 @@
   letter-spacing: 0.47px;
   line-height: 30px;
   margin-bottom: 30px;
-  font-family: Rubik-Light;
+  font-family: Charter-Roman;
 }
 
 .case_paragraph:last-child {
@@ -84,12 +85,20 @@
     color: #041543;
     letter-spacing: 1.13px;
     line-height: 45px;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
     font-family: Charter-Roman;
+    padding: 0 20px;
   }
 
   .case_description {
-    margin-bottom: 68px;
+    opacity: 0.6;
+    padding: 0 20px;
+    font-size: 17px;
+    color: #041543;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: Rubik-Light;
+    letter-spacing: 0.67px;
   }
 
   .case_slide_img {
@@ -102,5 +111,13 @@
 
   .case_link {
     margin: 0 auto 96px;
+  }
+
+  .case_m_width {
+    padding: 0 20px;
+  }
+
+  .case_paragraph {
+    font-family: Rubik-Light;
   }
 }

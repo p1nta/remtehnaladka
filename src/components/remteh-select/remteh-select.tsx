@@ -1,5 +1,7 @@
 import { Component, h, State, Prop } from '@stencil/core';
 
+import bracketIcon from '../../assets/svg/bracket.svg';
+
 import { IFilters } from '../tab-slider/tab-slider';
 
 @Component({
@@ -23,20 +25,11 @@ export class RemtehSelect {
   @State() opened = false;
   @State() focused = false;
 
-
-  onFocus = () => {
-    // this.focused = true;
-  }
-
   onBlur = () => {
     setTimeout(() => {
       this.focused = false;
       this.opened = false;
     }, 200);
-  }
-
-  onKeyDown = (e) => {
-    console.log(e);
   }
 
   onClick = (e: any) => {
@@ -64,17 +57,20 @@ export class RemtehSelect {
   }
 
   render() {
+    const iconStyles = { 'bracket_icon': true, 'm_rotate': this.opened };
+
     return (
       <div onClick={this.opened ? null : this.onClick} class={{"select_container": true, "select_focused": this.focused, "select_opened": this.opened }}>
         <input
-          onFocus={this.onFocus}
-          onKeyDown={this.onKeyDown}
           onBlur={this.onBlur}
           type="button"
           class="select_input"
           ref={el => this.refInput = el}
         />
-        <div class="select_window">{this.getText(`filter${this.selectedOption}`)}</div>
+        <div onClick={this.onClick} data-value={this.selectedOption} class="select_window">
+          <img src={bracketIcon} class={iconStyles} />
+          {this.getText(`filter${this.selectedOption}`)}
+        </div>
         <div class="select_dropdown">
           {this.prepareDropdown()}
         </div>

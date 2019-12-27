@@ -63,109 +63,109 @@ declare global {
 
 
   interface HTMLLangMethodElement extends Components.LangMethod, HTMLStencilElement {}
-  var HTMLLangMethodElement: {
+  const HTMLLangMethodElement: {
     prototype: HTMLLangMethodElement;
     new (): HTMLLangMethodElement;
   };
 
   interface HTMLRemtehAdvantagesElement extends Components.RemtehAdvantages, HTMLStencilElement {}
-  var HTMLRemtehAdvantagesElement: {
+  const HTMLRemtehAdvantagesElement: {
     prototype: HTMLRemtehAdvantagesElement;
     new (): HTMLRemtehAdvantagesElement;
   };
 
   interface HTMLRemtehBottomElement extends Components.RemtehBottom, HTMLStencilElement {}
-  var HTMLRemtehBottomElement: {
+  const HTMLRemtehBottomElement: {
     prototype: HTMLRemtehBottomElement;
     new (): HTMLRemtehBottomElement;
   };
 
   interface HTMLRemtehCaseElement extends Components.RemtehCase, HTMLStencilElement {}
-  var HTMLRemtehCaseElement: {
+  const HTMLRemtehCaseElement: {
     prototype: HTMLRemtehCaseElement;
     new (): HTMLRemtehCaseElement;
   };
 
   interface HTMLRemtehClientsElement extends Components.RemtehClients, HTMLStencilElement {}
-  var HTMLRemtehClientsElement: {
+  const HTMLRemtehClientsElement: {
     prototype: HTMLRemtehClientsElement;
     new (): HTMLRemtehClientsElement;
   };
 
   interface HTMLRemtehContactsElement extends Components.RemtehContacts, HTMLStencilElement {}
-  var HTMLRemtehContactsElement: {
+  const HTMLRemtehContactsElement: {
     prototype: HTMLRemtehContactsElement;
     new (): HTMLRemtehContactsElement;
   };
 
   interface HTMLRemtehDirectionsElement extends Components.RemtehDirections, HTMLStencilElement {}
-  var HTMLRemtehDirectionsElement: {
+  const HTMLRemtehDirectionsElement: {
     prototype: HTMLRemtehDirectionsElement;
     new (): HTMLRemtehDirectionsElement;
   };
 
   interface HTMLRemtehHeaderElement extends Components.RemtehHeader, HTMLStencilElement {}
-  var HTMLRemtehHeaderElement: {
+  const HTMLRemtehHeaderElement: {
     prototype: HTMLRemtehHeaderElement;
     new (): HTMLRemtehHeaderElement;
   };
 
   interface HTMLRemtehHomeElement extends Components.RemtehHome, HTMLStencilElement {}
-  var HTMLRemtehHomeElement: {
+  const HTMLRemtehHomeElement: {
     prototype: HTMLRemtehHomeElement;
     new (): HTMLRemtehHomeElement;
   };
 
   interface HTMLRemtehMainProjectsElement extends Components.RemtehMainProjects, HTMLStencilElement {}
-  var HTMLRemtehMainProjectsElement: {
+  const HTMLRemtehMainProjectsElement: {
     prototype: HTMLRemtehMainProjectsElement;
     new (): HTMLRemtehMainProjectsElement;
   };
 
   interface HTMLRemtehProjectsElement extends Components.RemtehProjects, HTMLStencilElement {}
-  var HTMLRemtehProjectsElement: {
+  const HTMLRemtehProjectsElement: {
     prototype: HTMLRemtehProjectsElement;
     new (): HTMLRemtehProjectsElement;
   };
 
   interface HTMLRemtehRootElement extends Components.RemtehRoot, HTMLStencilElement {}
-  var HTMLRemtehRootElement: {
+  const HTMLRemtehRootElement: {
     prototype: HTMLRemtehRootElement;
     new (): HTMLRemtehRootElement;
   };
 
   interface HTMLRemtehSelectElement extends Components.RemtehSelect, HTMLStencilElement {}
-  var HTMLRemtehSelectElement: {
+  const HTMLRemtehSelectElement: {
     prototype: HTMLRemtehSelectElement;
     new (): HTMLRemtehSelectElement;
   };
 
   interface HTMLRemtehTopElement extends Components.RemtehTop, HTMLStencilElement {}
-  var HTMLRemtehTopElement: {
+  const HTMLRemtehTopElement: {
     prototype: HTMLRemtehTopElement;
     new (): HTMLRemtehTopElement;
   };
 
   interface HTMLRemtehWhatWeDoElement extends Components.RemtehWhatWeDo, HTMLStencilElement {}
-  var HTMLRemtehWhatWeDoElement: {
+  const HTMLRemtehWhatWeDoElement: {
     prototype: HTMLRemtehWhatWeDoElement;
     new (): HTMLRemtehWhatWeDoElement;
   };
 
   interface HTMLRemtehWhyTrustElement extends Components.RemtehWhyTrust, HTMLStencilElement {}
-  var HTMLRemtehWhyTrustElement: {
+  const HTMLRemtehWhyTrustElement: {
     prototype: HTMLRemtehWhyTrustElement;
     new (): HTMLRemtehWhyTrustElement;
   };
 
   interface HTMLTabBarElement extends Components.TabBar, HTMLStencilElement {}
-  var HTMLTabBarElement: {
+  const HTMLTabBarElement: {
     prototype: HTMLTabBarElement;
     new (): HTMLTabBarElement;
   };
 
   interface HTMLTabSliderElement extends Components.TabSlider, HTMLStencilElement {}
-  var HTMLTabSliderElement: {
+  const HTMLTabSliderElement: {
     prototype: HTMLTabSliderElement;
     new (): HTMLTabSliderElement;
   };

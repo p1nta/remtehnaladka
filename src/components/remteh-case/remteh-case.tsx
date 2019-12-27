@@ -32,14 +32,14 @@ export class RemtehCase {
 
   renderSlides = () => {
     const images = Constants.caseImg[this.case];
-    const imagesRetina = Constants.caseImg[`${this.case}Retina`];
-
+    const imagesRetina = Constants.caseImg[`${this.case}Retina`] || [];
+    debugger;
     return (
       <div class="case_slides">
         {images.map((path: string, index: number) =>
           (
             <img
-              srcset={`${path} 1x, ${imagesRetina[index]} 2x`}
+              srcset={`${path} 1x, ${imagesRetina[index] || path} 2x`}
               src={path}
               class="case_slide_img"
             />

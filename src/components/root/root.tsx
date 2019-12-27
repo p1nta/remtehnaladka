@@ -18,6 +18,7 @@ export class AppRoot {
             <stencil-route url='/' component='remteh-home' exact={true} />
             <stencil-route url='/projects' component='remteh-projects' />
             <stencil-route url='/roshen' component='remteh-case' componentProps={{ case: 'Roshen' }} />
+            <stencil-route url='/budfarfor' component='remteh-case' componentProps={{ case: 'Budfarfor' }} />
           </stencil-route-switch>
         </stencil-router>
       </div>

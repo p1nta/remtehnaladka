@@ -20,6 +20,8 @@ export type IFilters = 'All' | 'Industrial' | 'Civil' | 'Foreign';
 })
 
 export class TabSlider {
+  refElement: HTMLDivElement;
+
   constructor() {
     document.querySelector('lang-method').getText().then((method) => {
       this.getText = method;
@@ -34,7 +36,16 @@ export class TabSlider {
   @State() selectedTab: IFilters = 'All';
 
   onSelectTab = (value: IFilters) => {
-    this.selectedTab = value;
+    if(this.selectedTab === value) return;
+
+    const duration = 200;
+    const slideContainer = document.querySelector(`[data-slides="${this.selectedTab}"]`) as HTMLDivElement;
+
+    slideContainer.style.opacity = '0';
+
+    setTimeout(() => {
+      this.selectedTab = value;
+    }, duration);
   }
 
   slide = (slide: ISlide, key: number) => {
@@ -51,9 +62,9 @@ export class TabSlider {
     )
   }
 
-  renderSlidesContainer(array: ISlide[]) {
+  renderSlidesContainer = (array: ISlide[]) => {
     return (
-      <div class="slide_container">
+      <div class="slide_container" key={this.selectedTab} data-slides={this.selectedTab}>
         {array.map((item, index) => this.slide(item, index))}
       </div>
     );
@@ -73,7 +84,7 @@ export class TabSlider {
   render() {
 
     return (
-      <div class="slider">
+      <div ref={el => this.refElement = el} class="slider">
         <tab-bar
           tabs={['All', ...this.tabs]}
           onChangeTab={this.onSelectTab}

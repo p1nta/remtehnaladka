@@ -4,7 +4,7 @@
   min-height: 266px;
   align-items: top;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 94px;
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
   top: 50%;
   font-size: 50px;
   line-height: 50px;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   color: #FFFFFF; 
   font-family: Charter-Roman;
   margin: 0;
@@ -48,11 +48,13 @@
 @media (max-width: 500px) {
   .title_text {
     font-size: 35px;
-    margin-top: 40px;
+    margin-top: 44px;
+    letter-spacing: 0.7px
   }
 
   .b_title {
     margin-bottom: 50px;
+    min-height: 260px;
   }
 
   .title_img_mobile {

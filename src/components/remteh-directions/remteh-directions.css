@@ -131,6 +131,9 @@
 
   .directions_item_title {
     max-width: 280px;
+    margin: 0 auto;
+    font-size: 25px;
+    
   }
 
   .directions_item_description {

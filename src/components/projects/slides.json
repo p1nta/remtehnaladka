@@ -1,28 +1,10 @@
 {
   "Industrial": [
     {
-      "path": "../../assets/img/roshen_x1.png",
-      "pathRetina": "../../assets/img/roshen_x2.png",
-      "link": "/roshen",
-      "textCode": "slideRoshen"
-    },
-    {
-      "path": "../../assets/img/roshen_x1.png",
-      "pathRetina": "../../assets/img/roshen_x2.png",
-      "link": "/roshen",
-      "textCode": "slideRoshen"
-    },
-    {
-      "path": "../../assets/img/roshen_x1.png",
-      "pathRetina": "../../assets/img/roshen_x2.png",
-      "link": "/roshen",
-      "textCode": "slideRoshen"
-    },
-    {
-      "path": "../../assets/img/roshen_x1.png",
-      "pathRetina": "../../assets/img/roshen_x2.png",
-      "link": "/roshen",
-      "textCode": "slideRoshen"
+      "path": "../../assets/img/Budfarfor_slide.png",
+      "pathRetina": "../../assets/img/Budfarfor_slide.png",
+      "link": "/budfarfor",
+      "textCode": "slideBudfarfor"
     },
     {
       "path": "../../assets/img/roshen_x1.png",
@@ -40,12 +22,6 @@
     }
   ],
   "Foreign": [
-    {
-      "path": "../../assets/img/roshen_x1.png",
-      "pathRetina": "../../assets/img/roshen_x2.png",
-      "link": "/roshen",
-      "textCode": "slideRoshen"
-    },
     {
       "path": "../../assets/img/roshen_x1.png",
       "pathRetina": "../../assets/img/roshen_x2.png",

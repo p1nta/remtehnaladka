@@ -32,14 +32,16 @@ export class RemtehCase {
 
   renderSlides = () => {
     const images = Constants.caseImg[this.case];
-    const imagesRetina = Constants.caseImg[`${this.case}Retina`] || [];
+    const imagesRetina = Constants.caseImg[`${this.case}Retina`] || images;
     debugger;
+
     return (
       <div class="case_slides">
         {images.map((path: string, index: number) =>
           (
             <img
-              srcset={`${path} 1x, ${imagesRetina[index] || path} 2x`}
+              key={index}
+              srcset={`${path} 1x, ${imagesRetina[index]} 2x`}
               src={path}
               class="case_slide_img"
             />
@@ -51,7 +53,7 @@ export class RemtehCase {
 
   renderDescription = () => {
     const text = this.getCaseText(`${this.case}.description`);
-
+    debugger;
     return (
       <div class="case_description">
         {text.map(paragraph => <p class="case_paragraph">{paragraph}</p>)}
@@ -64,9 +66,13 @@ export class RemtehCase {
       <div class="case_wrapper">
         <remteh-header mode="Case" />
         <div class="case_m_width">
-          {this.renderTitle()}
-          {this.renderDescription()}
-          {this.renderSlides()}
+          <nice-anim>
+            {this.renderTitle()}
+            {this.renderDescription()}
+          </nice-anim>
+          <nice-anim>
+            {this.renderSlides()}
+          </nice-anim>
           <stencil-route-link
             url="/projects"
             class="case_link"

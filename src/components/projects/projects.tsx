@@ -38,13 +38,13 @@ export class Projects {
           />
           <p class="title_text">{this.getText('projectsTitle')}</p>
         </div>
-        <div class="content">
-          <tab-slider
-            class="l_tab_slider"
-            tabs={['Industrial', 'Civil', 'Foreign']}
-            slides={slides}
-          />
-        </div>
+          <div class="content">
+            <tab-slider
+              class="l_tab_slider"
+              tabs={['Industrial', 'Civil', 'Foreign']}
+              slides={slides}
+            />
+          </div>
         <remteh-contacts />
         <remteh-bottom />
       </div>

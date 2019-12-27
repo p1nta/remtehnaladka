@@ -123,6 +123,16 @@
     padding-bottom: 60px;
   }
 
+  .directions_title {
+    font-size: 35px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .directions_item_title {
+    max-width: 280px;
+  }
+
   .directions_item_description {
     margin-bottom: 40px;
     height: auto;

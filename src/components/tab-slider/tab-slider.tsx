@@ -85,12 +85,16 @@ export class TabSlider {
 
     return (
       <div ref={el => this.refElement = el} class="slider">
-        <tab-bar
-          tabs={['All', ...this.tabs]}
-          onChangeTab={this.onSelectTab}
-          selectedTab={this.selectedTab}
-        />
-        {this.renderSlides()}
+        <nice-anim>
+          <tab-bar
+            tabs={['All', ...this.tabs]}
+            onChangeTab={this.onSelectTab}
+            selectedTab={this.selectedTab}
+          />
+        </nice-anim>
+        <nice-anim>
+          {this.renderSlides()}
+        </nice-anim>
       </div>
     );
   }

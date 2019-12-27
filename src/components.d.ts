@@ -72,7 +72,7 @@ declare global {
   };
 
   interface HTMLNiceAnimElement extends Components.NiceAnim, HTMLStencilElement {}
-  var HTMLNiceAnimElement: {
+  const HTMLNiceAnimElement: {
     prototype: HTMLNiceAnimElement;
     new (): HTMLNiceAnimElement;
   };

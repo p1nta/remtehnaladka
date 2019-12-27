@@ -75,12 +75,14 @@ export class RemtehAdvantages {
   render() {
     return (
       <div class="advantages_wrapper">
-        <h3 class="advantages_title">
-          Наши преимущества
-        </h3>
-        <div class="advantages_items_wrapper">
-          {this.advantagesItems.map(this.renderAdvantageItem)}
-        </div>
+        <nice-anim>
+          <h3 class="advantages_title">
+            Наши преимущества
+          </h3>
+          <div class="advantages_items_wrapper">
+            {this.advantagesItems.map(this.renderAdvantageItem)}
+          </div>
+        </nice-anim>
       </div>
     );
   }

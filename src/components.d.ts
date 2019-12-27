@@ -23,6 +23,7 @@ export namespace Components {
     'getCaseText': () => Promise<(key: string) => any>;
     'getText': () => Promise<(key: string) => any>;
   }
+  interface NiceAnim {}
   interface RemtehAdvantages {}
   interface RemtehBottom {}
   interface RemtehCase {
@@ -45,7 +46,9 @@ export namespace Components {
     'options': IFilters[];
     'selectedOption': IFilters;
   }
-  interface RemtehTop {}
+  interface RemtehTop {
+    'class': string;
+  }
   interface RemtehWhatWeDo {}
   interface RemtehWhyTrust {}
   interface TabBar {
@@ -66,6 +69,12 @@ declare global {
   const HTMLLangMethodElement: {
     prototype: HTMLLangMethodElement;
     new (): HTMLLangMethodElement;
+  };
+
+  interface HTMLNiceAnimElement extends Components.NiceAnim, HTMLStencilElement {}
+  var HTMLNiceAnimElement: {
+    prototype: HTMLNiceAnimElement;
+    new (): HTMLNiceAnimElement;
   };
 
   interface HTMLRemtehAdvantagesElement extends Components.RemtehAdvantages, HTMLStencilElement {}
@@ -171,6 +180,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'lang-method': HTMLLangMethodElement;
+    'nice-anim': HTMLNiceAnimElement;
     'remteh-advantages': HTMLRemtehAdvantagesElement;
     'remteh-bottom': HTMLRemtehBottomElement;
     'remteh-case': HTMLRemtehCaseElement;
@@ -193,6 +203,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface LangMethod {}
+  interface NiceAnim {}
   interface RemtehAdvantages {}
   interface RemtehBottom {}
   interface RemtehCase {
@@ -215,7 +226,9 @@ declare namespace LocalJSX {
     'options'?: IFilters[];
     'selectedOption'?: IFilters;
   }
-  interface RemtehTop {}
+  interface RemtehTop {
+    'class'?: string;
+  }
   interface RemtehWhatWeDo {}
   interface RemtehWhyTrust {}
   interface TabBar {
@@ -230,6 +243,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'lang-method': LangMethod;
+    'nice-anim': NiceAnim;
     'remteh-advantages': RemtehAdvantages;
     'remteh-bottom': RemtehBottom;
     'remteh-case': RemtehCase;
@@ -257,6 +271,7 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'lang-method': LocalJSX.LangMethod & JSXBase.HTMLAttributes<HTMLLangMethodElement>;
+      'nice-anim': LocalJSX.NiceAnim & JSXBase.HTMLAttributes<HTMLNiceAnimElement>;
       'remteh-advantages': LocalJSX.RemtehAdvantages & JSXBase.HTMLAttributes<HTMLRemtehAdvantagesElement>;
       'remteh-bottom': LocalJSX.RemtehBottom & JSXBase.HTMLAttributes<HTMLRemtehBottomElement>;
       'remteh-case': LocalJSX.RemtehCase & JSXBase.HTMLAttributes<HTMLRemtehCaseElement>;

@@ -126,6 +126,14 @@
     display: block;
   }
 
+  .projects_main_title {
+    font-size: 35px;
+  }
+
+  .projects_main_achievement_description {
+    font-size: 16px;
+  }
+
   .projects_main_bottom_part {
     padding: 0 20px 190px;
   }
@@ -146,6 +154,9 @@
   .projects_main_examples {
     display: block;
     transform: translateY(-65px);
+  }
+  .projects_main_example_item_description {
+    font-size: 25px;
   }
 
   .projects_main_example_item {

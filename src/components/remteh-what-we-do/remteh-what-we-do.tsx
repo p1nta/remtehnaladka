@@ -14,12 +14,6 @@ interface IElement {
 export class RemtehWhatWeDo {
   private Elements: IElement[] = [
     {
-      image: '../../assets/img/design_x2.png',
-      title: 'Проектирование',
-      description: 'Мы учитываем все параметры и назначение будущего объекта при построении комплекса инженерных систем. Это позволяет нам создать эффективную, удобную в управлении единую интегрированную инфраструктуру.',
-      width: 66,
-    },
-    {
       image: '../../assets/img/engineering_systems_x2.png',
       title: 'Инженерные системы',
       description: 'Проектирование, поставка и монтаж автоматических инженерных систем, систем безопасности, электроснабжения, систем передачи данных и климатических систем. При проектировании мы учитываем все особенности объекта, что позволяет избежать несостыковок и лишнего дублирования в системе.',
@@ -38,6 +32,30 @@ export class RemtehWhatWeDo {
       width: 70,
     },
   ];
+
+  renderProjects() {
+    return (
+      <div class="what_we_do_item">
+        <img
+          src={'../../assets/img/design_x2.png'}
+          alt={'Проектирование'}
+          class="what_we_do_item_image"
+          width={66}
+        />
+        <h3 class="what_we_do_item_title">
+          Проектирование
+        </h3>
+        <ul class="what_we_do_item_description">
+          <li>жилых, общественных и промышленных зданий;</li>
+          <li>инженерных систем;</li>
+          <li>территории и ландшафтная архитектура;</li>
+          <li>дизайн жилых и общественных интерьеров;</li>
+          <li>сбор данных для проектирования;</li>
+          <li>комплекс работ по проектно-сметной документации.</li>
+        </ul>
+      </div>
+    );
+  }
 
   renderItem(element: IElement) {
     return (
@@ -69,12 +87,12 @@ export class RemtehWhatWeDo {
             </h2>
             <div class="what_we_do_items_wrapper">
               <div class="what_we_do_items_column">
+                {this.renderProjects()}
                 {this.renderItem(this.Elements[0])}
-                {this.renderItem(this.Elements[1])}
               </div>
               <div class="what_we_do_items_column">
+                {this.renderItem(this.Elements[1])}
                 {this.renderItem(this.Elements[2])}
-                {this.renderItem(this.Elements[3])}
               </div>
             </div>
           </nice-anim>

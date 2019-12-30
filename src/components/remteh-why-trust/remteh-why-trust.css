@@ -97,6 +97,7 @@
 
   .why_trust_title {
     margin-bottom: 70px;
+    font-size: 35px;
   }
   
   .why_trust_image_block {
@@ -125,5 +126,13 @@
 
   .why_trust_second_img {
     margin-right: 0;
+  }
+
+  .why_trust_item_title {
+    font-size: 25px;
+  }
+
+  .why_trust_item_descr {
+    font-size: 16px;
   }
 }

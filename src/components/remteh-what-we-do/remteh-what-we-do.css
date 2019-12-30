@@ -41,12 +41,8 @@
   border-radius: 12px;
   display: inline-block;
   padding: 40px;
-  max-width: 400px;
+  height: calc(50% - 20px);
   box-sizing: border-box;
-}
-
-.what_we_do_item:nth-child(odd) {
-  margin-bottom: 40px;
 }
 
 .what_we_do_item_image {
@@ -81,6 +77,10 @@
 }
 
 @media only screen and (max-width: 736px) {
+  .what_we_do_title {
+    font-size: 35px;
+  }
+
   .what_we_do_wrapper {
     padding: 50px 20px 250px;
   }
@@ -91,8 +91,13 @@
   .what_we_do_items_column {
     width: 100%;
     margin: 0 0 40px;
-    display: block;
   }
+
+
+  .what_we_do_item:nth-child(odd) {
+    margin-bottom: 40px;
+  }
+
 
   .what_we_do_items_column:last-child {
     margin-bottom: 0;
@@ -100,5 +105,13 @@
 
   .what_we_do_item {
     max-width: 100%;
+  }
+
+  .what_we_do_item_title {
+    font-size: 25px;
+  }
+
+  .what_we_do_item_description {
+    font-size: 16px;
   }
 }

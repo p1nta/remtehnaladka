@@ -13,16 +13,16 @@ interface IElement {
 export class RemtehMainProjects {
   private exampleElements: IElement[] = [
     {
-      image: '../../assets/img/default_image.png',
+      image: '../../assets/img/roshen_1.jpg',
       title: 'Строительство фабрики Roshen в Виннице',
     },
     {
-      image: '../../assets/img/default_image.png',
+      image: '../../assets/img/geliar_1.jpg',
       title: 'Строительство фитнесс-клуба Гелиар в Киеве',
     },
     {
-      image: '../../assets/img/default_image.png',
-      title: 'Строительство фабрики Roshen в Виннице',
+      image: '../../assets/img/leoni_1.jpg',
+      title: 'Строительство завода Leoni в Коломые',
     },
   ];
 
@@ -61,11 +61,13 @@ export class RemtehMainProjects {
   renderExampleItem(element: IElement) {
     return (
       <div class="projects_main_example_item">
-        <img
-          src={element.image}
-          alt={element.title}
-          class="projects_main_example_item_image"
-        />
+        <div class="projects_main_example_item_image_wrap">
+          <img
+            src={element.image}
+            alt={element.title}
+            class="projects_main_example_item_image"
+          />
+        </div>
         <p class="projects_main_example_item_description">
           {element.title}
         </p>

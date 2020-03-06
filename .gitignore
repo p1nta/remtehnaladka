@@ -11,6 +11,6 @@ package-lock.json
 .vscode
 .stencil
 
-dist/
-www/
-loader/
+dist
+www
+loader

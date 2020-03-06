@@ -1,36 +1,36 @@
 {
   "Industrial": [
     {
-      "path": "../../assets/img/Budfarfor_slide.jpg",
-      "pathRetina": "../../assets/img/Budfarfor_slide.jpg",
+      "path": "./assets/img/Budfarfor_slide.jpg",
+      "pathRetina": "./assets/img/Budfarfor_slide.jpg",
       "link": "/budfarfor",
       "textCode": "slideBudfarfor"
     },
     {
-      "path": "../../assets/img/roshen_1.jpg",
-      "pathRetina": "../../assets/img/roshen_1.jpg",
+      "path": "./assets/img/roshen_1.jpg",
+      "pathRetina": "./assets/img/roshen_1.jpg",
       "link": "/roshen",
       "textCode": "slideRoshen"
     }
   ],
   "Civil": [
     {
-      "path": "../../assets/img/ekvator_1.jpg",
-      "pathRetina": "../../assets/img/ekvator_1.jpg",
+      "path": "./assets/img/ekvator_1.jpg",
+      "pathRetina": "./assets/img/ekvator_1.jpg",
       "link": "/ekvator",
       "textCode": "slideEkvator"
     },
     {
-      "path": "../../assets/img/geliar_1.jpg",
-      "pathRetina": "../../assets/img/geliar_1.jpg",
+      "path": "./assets/img/geliar_1.jpg",
+      "pathRetina": "./assets/img/geliar_1.jpg",
       "link": "/geliar",
       "textCode": "slideGeliar"
     }
   ],
   "Foreign": [
     {
-      "path": "../../assets/img/leoni_1.jpg",
-      "pathRetina": "../../assets/img/leoni_1.jpg",
+      "path": "./assets/img/leoni_1.jpg",
+      "pathRetina": "./assets/img/leoni_1.jpg",
       "link": "/leoni",
       "textCode": "slideLeoni"
     }

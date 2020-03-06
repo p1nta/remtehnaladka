@@ -2,7 +2,7 @@
   position: relative;
   min-height: 860px;
   overflow: hidden;
-  background: url("../../assets/img/top.png");
+  background: url("./assets/img/top.png");
   background-position: bottom;
   background-size: cover;
   position: relative;

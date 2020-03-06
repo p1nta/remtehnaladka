@@ -16,7 +16,7 @@ export class RemtehWhyTrust {
           <div class="why_trust_first">
             <div class="why_trust_image_block">
               <img
-                src="../../assets/img/build_process_x2.png"
+                src="./assets/img/build_process_x2.png"
                 alt=""
                 class="why_trust_first_img"
               />
@@ -48,7 +48,7 @@ export class RemtehWhyTrust {
             </div>
             <div class="why_trust_image_block">
               <img
-                src="../../assets/img/documentation_x2.png"
+                src="./assets/img/documentation_x2.png"
                 alt=""
                 class="why_trust_second_img"
               />

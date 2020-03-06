@@ -13,15 +13,15 @@ interface IElement {
 export class RemtehMainProjects {
   private exampleElements: IElement[] = [
     {
-      image: '../../assets/img/roshen_1.jpg',
+      image: './assets/img/roshen_1.jpg',
       title: 'Строительство фабрики Roshen в Виннице',
     },
     {
-      image: '../../assets/img/geliar_1.jpg',
+      image: './assets/img/geliar_1.jpg',
       title: 'Строительство фитнесс-клуба Гелиар в Киеве',
     },
     {
-      image: '../../assets/img/leoni_1.jpg',
+      image: './assets/img/leoni_1.jpg',
       title: 'Строительство завода Leoni в Коломые',
     },
   ];
@@ -45,7 +45,7 @@ export class RemtehMainProjects {
     return (
       <div class="projects_main_achievement_item">
         <img
-          src="../../assets/img/prize_x2.png"
+          src="./assets/img/prize_x2.png"
           class="projects_main_achievement_image"
         />
         <p class="projects_main_achievement_item_count">

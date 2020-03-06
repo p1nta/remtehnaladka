@@ -37,6 +37,7 @@ graph TD;
   remteh-what-we-do --> nice-anim
   remteh-directions --> nice-anim
   remteh-main-projects --> nice-anim
+  remteh-main-projects --> stencil-route-link
   remteh-why-trust --> nice-anim
   remteh-advantages --> nice-anim
   remteh-clients --> nice-anim

@@ -18,8 +18,8 @@ export class RemtehTop {
             назначения в Украине
           </h2>
           <div class="top_wrapper_links">
-            <a class="top_wrapper_link" href="/projects">Проекты</a>
-            <a class="top_wrapper_link" href="#contacts">Контакты</a>
+            <a class="top_wrapper_link" href="/remtehnaladka/projects">Проекты</a>
+            <a class="top_wrapper_link" href="/remtehnaladka#contacts">Контакты</a>
           </div>
           <p class="top_part_description">
             Работая на рынке строительных услуг с 2006 года, мы заслужили

@@ -69,20 +69,20 @@ export class RemtehHeader {
       (
         <button class="header_button" onClick={this.onClickContacts}>{this.getText('headerContacts')}</button>
       ) : (
-        <a href="/#contacts" class="header_button">{this.getText('headerContacts')}</a>
+        <a href="/remtehnaladka/#contacts" class="header_button">{this.getText('headerContacts')}</a>
       )
 
     return (
       <header ref={el => this.headerRef = el} class={headerStyle}>
         <a
           class="left_group"
-          href="/"
+          href="/remtehnaladka"
         >
           <img src={logo} class="logo_header"/>
           <p class="logo_text_header">REMTEHNALADKA</p>
         </a>
         <div class="right_group">
-          <stencil-route-link url="/projects" class="header_button" exact={true}>{this.getText('headerProjects')}</stencil-route-link>
+          <stencil-route-link url="/remtehnaladka/projects" class="header_button" exact={true}>{this.getText('headerProjects')}</stencil-route-link>
           {buttonContact}
         </div>
       </header>

@@ -74,7 +74,7 @@ export class RemtehCase {
             {this.renderSlides()}
           </nice-anim>
           <stencil-route-link
-            url="/projects"
+            url="/remtehnaladka/projects"
             class="case_link"
             exact={true}
           >

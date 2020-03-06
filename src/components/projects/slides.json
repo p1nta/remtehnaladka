@@ -3,13 +3,13 @@
     {
       "path": "./assets/img/Budfarfor_slide.jpg",
       "pathRetina": "./assets/img/Budfarfor_slide.jpg",
-      "link": "/budfarfor",
+      "link": "/remtehnaladka/budfarfor",
       "textCode": "slideBudfarfor"
     },
     {
       "path": "./assets/img/roshen_1.jpg",
       "pathRetina": "./assets/img/roshen_1.jpg",
-      "link": "/roshen",
+      "link": "/remtehnaladka/roshen",
       "textCode": "slideRoshen"
     }
   ],
@@ -17,13 +17,13 @@
     {
       "path": "./assets/img/ekvator_1.jpg",
       "pathRetina": "./assets/img/ekvator_1.jpg",
-      "link": "/ekvator",
+      "link": "/remtehnaladka/ekvator",
       "textCode": "slideEkvator"
     },
     {
       "path": "./assets/img/geliar_1.jpg",
       "pathRetina": "./assets/img/geliar_1.jpg",
-      "link": "/geliar",
+      "link": "/remtehnaladka/geliar",
       "textCode": "slideGeliar"
     }
   ],
@@ -31,7 +31,7 @@
     {
       "path": "./assets/img/leoni_1.jpg",
       "pathRetina": "./assets/img/leoni_1.jpg",
-      "link": "/leoni",
+      "link": "/remtehnaladka/leoni",
       "textCode": "slideLeoni"
     }
   ]

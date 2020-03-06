@@ -27,7 +27,7 @@ export class Remtehdirections {
       route: '/projects',
     },
     {
-      image: '../../assets/img/leoni.png',
+      image: '../../assets/img/geliar_direct.png',
       title: 'Гражданское строительство',
       descriptions: [
         'Торговые центры',

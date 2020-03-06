@@ -10,4 +10,7 @@ package-lock.json
 *.sass.d.ts
 .vscode
 .stencil
-www
+
+dist/
+www/
+loader/

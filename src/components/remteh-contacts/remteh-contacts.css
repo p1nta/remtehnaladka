@@ -62,8 +62,17 @@
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.51px;
-  color: #041543;
+  color: #041543 !important;
   max-width: 230px;
+}
+
+.phones a {
+  display: block;
+  color: #041543 !important;
+}
+
+.phones a:first-child {
+  margin-bottom: 10px;
 }
 
 .adress {

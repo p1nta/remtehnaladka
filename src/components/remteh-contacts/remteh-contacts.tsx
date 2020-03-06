@@ -35,7 +35,6 @@ export class RemtehContacts {
           </a>
           <p class="phones">
             <a href="tel:++380999709482">+38 (099) 970-94-82</a>
-            <br/>
             <a href="tel:++380954930687">+38 (095) 493-06-87</a>
           </p>
           <p class="adress">

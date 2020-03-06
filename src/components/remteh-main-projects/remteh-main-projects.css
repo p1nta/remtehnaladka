@@ -114,7 +114,7 @@
 .projects_main_all_link {
   font-family: Rubik-Regular;
   font-size: 18px;
-  color: #F6B93A;
+  color: #F6B93A !important;
   letter-spacing: 0.53px;
   text-align: center;
   line-height: 30px;
@@ -142,6 +142,10 @@
 
   .projects_main_achievement_description {
     font-size: 16px;
+    opacity: 0.6;
+    letter-spacing: 0.68px;
+    line-height: 25px;
+    width: auto;
   }
 
   .projects_main_bottom_part {
@@ -167,6 +171,9 @@
   }
   .projects_main_example_item_description {
     font-size: 25px;
+    font-family: Charter-Roman;
+    letter-spacing: 0.58px;
+    line-height: 30px;
   }
 
   .projects_main_example_item {

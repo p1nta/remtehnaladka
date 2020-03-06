@@ -64,12 +64,12 @@ export class Remtehdirections {
           <p class="directions_item_description">
             {element.descriptions.map((descr: string) => (<p>{descr}</p>))}
           </p>
-          <a
-            class="directions_item_link m_clicable"
-            href={element.route}
+          <stencil-route-link
+            anchorClass="directions_item_link m_clicable"
+            url={element.route}
           >
             Посмотреть проекты
-          </a>
+          </stencil-route-link>
         </div>
       </div>
     );

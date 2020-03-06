@@ -127,22 +127,33 @@
     font-size: 35px;
     max-width: 280px;
     margin: 0 auto;
+    font-family: Charter-Roman;
+    letter-spacing: 1.13px;
+    line-height: 40px;
   }
 
   .directions_item_title {
     max-width: 280px;
-    margin: 0 auto;
+    margin: 0 auto 33px;
     font-size: 25px;
-    
+    font-family: Charter-Roman;
+    letter-spacing: 0.86px;
+    line-height: 30px;
   }
 
   .directions_item_description {
     margin-bottom: 40px;
     height: auto;
     font-size: 16px;
+    opacity: 0.6;
+    letter-spacing: 0.47px;
+    line-height: 30px;
   }
 
   .directions_item_link {
     font-size: 16px;
+    font-family: Rubik-Regular;
+    letter-spacing: 0.47px;
+    line-height: 30px;
   }
 }

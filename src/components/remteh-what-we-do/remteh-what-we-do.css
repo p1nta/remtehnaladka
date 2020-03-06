@@ -77,6 +77,10 @@
 }
 
 @media only screen and (max-width: 736px) {
+  .what_we_do_background {
+    background-image: url("./assets/img/city_architecture_x2_mobile.png");
+  }
+
   .what_we_do_title {
     font-size: 35px;
   }

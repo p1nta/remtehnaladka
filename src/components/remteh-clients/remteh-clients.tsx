@@ -24,7 +24,7 @@ export class RemtehClients {
             <div class="clients_img_container">
               <img
                 class="clients_img PGphase"
-                src="./assets/img/PG_phase_x2.png.png"
+                src="./assets/img/PG_phase_x2.png"
                 alt=""
               />
             </div>

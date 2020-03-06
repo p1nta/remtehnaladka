@@ -15,7 +15,7 @@ interface IElements {
 export class Remtehdirections {
   private Elements = [
     {
-      image: '../../assets/img/roshen.png',
+      image: './assets/img/roshen.png',
       title: 'Строительство промышленных объектов',
       descriptions: [
         'Объекты энергетики',
@@ -27,7 +27,7 @@ export class Remtehdirections {
       route: '/projects',
     },
     {
-      image: '../../assets/img/geliar_direct.png',
+      image: './assets/img/geliar_direct.png',
       title: 'Гражданское строительство',
       descriptions: [
         'Торговые центры',
@@ -39,7 +39,7 @@ export class Remtehdirections {
       route: '/projects',
     },
     {
-      image: '../../assets/img/leoni.png',
+      image: './assets/img/leoni.png',
       title: 'Строительство для иностранного заказчика',
       descriptions: [
         'Промышленные объекты',

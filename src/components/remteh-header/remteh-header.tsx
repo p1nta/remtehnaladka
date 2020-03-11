@@ -19,8 +19,8 @@ export class RemtehHeader {
   headerRef: any;
 
   @Prop() mode: 'Home' | 'Projects' | 'Case';
-  @State() toContacts = window.location.search === '?contacts'
-  @State() isScrolled = window.location.search === '?contacts'
+  @State() toContacts = window.location.hash.includes('contacts')
+  @State() isScrolled = window.location.hash.includes('contacts')
 
   onScroll = () => {
     if(this.mode === 'Case') {
@@ -74,15 +74,15 @@ export class RemtehHeader {
 
     return (
       <header ref={el => this.headerRef = el} class={headerStyle}>
-        <a
-          class="left_group"
-          href="/"
+        <stencil-route-link
+          anchorClass="left_group"
+          url="/"
         >
           <img src={logo} class="logo_header"/>
           <p class="logo_text_header">REMTEHNALADKA</p>
-        </a>
+        </stencil-route-link>
         <div class="right_group">
-          <stencil-route-link url="/projects" class="header_button" exact={true}>{this.getText('headerProjects')}</stencil-route-link>
+          <stencil-route-link url="/projects" anchorClass="header_button" exact={true}>{this.getText('headerProjects')}</stencil-route-link>
           {buttonContact}
         </div>
       </header>

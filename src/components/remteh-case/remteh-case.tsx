@@ -33,7 +33,6 @@ export class RemtehCase {
   renderSlides = () => {
     const images = Constants.caseImg[this.case];
     const imagesRetina = Constants.caseImg[`${this.case}Retina`] || images;
-    debugger;
 
     return (
       <div class="case_slides">
@@ -53,7 +52,7 @@ export class RemtehCase {
 
   renderDescription = () => {
     const text = this.getCaseText(`${this.case}.description`);
-    debugger;
+
     return (
       <div class="case_description">
         {text.map(paragraph => <p class="case_paragraph">{paragraph}</p>)}

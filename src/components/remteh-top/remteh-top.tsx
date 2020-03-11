@@ -12,9 +12,9 @@ export class RemtehTop {
       <div class={`top_part_wrapper ${this.class}`}>
         <nice-anim>
           <h2 class="top_part_title">
-            Строительство<br/>
-            объектов промышленного<br/>
-            и гражданского<br/>
+            Строительство
+            объектов промышленного
+            и гражданского
             назначения в Украине
           </h2>
           <div class="top_wrapper_links">

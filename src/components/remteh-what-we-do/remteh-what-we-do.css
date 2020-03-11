@@ -7,7 +7,7 @@
 }
 
 .what_we_do_wrapper {
-  padding: 70px 100px 190px;
+  padding: 50px 100px 190px;
 }
 
 .what_we_do_title {
@@ -25,7 +25,7 @@
   margin: 115px auto 0;
   font-size: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .what_we_do_items_column {
@@ -33,15 +33,17 @@
   flex-direction: column;
   justify-content: space-between;
   width: calc((100% - 40px) / 2);
+  max-width: 400px;
 }
 
 .what_we_do_item {
   background: #FFFFFF;
-  box-shadow: 0 0 20px 0 rgba(105,136,204,0.4);
+  box-shadow: 0 0 20px 0 rgba(105,136,204,0.25);
   border-radius: 12px;
   display: inline-block;
   padding: 40px;
-  height: calc(50% - 20px);
+  margin-bottom: 40px;
+  min-height: calc(50% - 20px);
   box-sizing: border-box;
 }
 
@@ -62,7 +64,7 @@
 
 .what_we_do_item_description {
   opacity: 0.6;
-  font-family: 'Rubik-Light';
+  font-family: 'Rubik';
   font-size: 14px;
   color: #041543;
   letter-spacing: 0.6px;
@@ -89,6 +91,7 @@
     padding: 50px 20px 250px;
   }
   .what_we_do_items_wrapper {
+    margin-top: 75px;
     display: block;
     width: 100%;
   }

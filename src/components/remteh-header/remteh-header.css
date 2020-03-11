@@ -52,13 +52,13 @@
 }
 
 .logo_text_header {
-  display: inline-block;
-  font-weight: 500;
+  font-family: 'Rubik';
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 1.026px;
+  color: #FFFFFF;
+  letter-spacing: 1.03px;
   color: #FFFFFF;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .left_group, .right_group {

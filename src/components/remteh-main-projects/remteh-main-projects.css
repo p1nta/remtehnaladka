@@ -49,7 +49,8 @@
 
 .projects_main_achievement_description {
   opacity: 0.6;
-  font-family: 'Rubik-Light';
+  font-family: 'Rubik';
+  font-weight: 100;
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 0.6px;
@@ -60,7 +61,7 @@
 }
 
 .projects_main_bottom_part {
-  padding: 0 100px 190px;
+  padding: 0 100px 170px;
   text-align: center;
   background: #FFFFFF;
   background: url("./assets/img/projects_x2.png");
@@ -86,7 +87,7 @@
 
 .projects_main_example_item_image_wrap {
   background: #FFFFFF;
-  box-shadow: 0 0 10px 0 rgba(105,136,204,0.18);
+  box-shadow: 0 0 10px 0 rgba(105,136,204,0.25);
   border-radius: 12px;
   margin-bottom: 38px;
   position: relative;
@@ -112,7 +113,8 @@
 }
 
 .projects_main_all_link {
-  font-family: 'Rubik-Regular';
+  font-family: 'Rubik';
+  font-weight: 400;
   font-size: 18px;
   color: #F6B93A !important;
   letter-spacing: 0.53px;

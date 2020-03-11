@@ -14,7 +14,7 @@ export class NiceAnim {
   }
 
   addIntersectionObserver() {
-    if (IntersectionObserver) {
+    if ('IntersectionObserver' in window) {
       this.io = new IntersectionObserver((data: any) => {
       
         if (data[0].isIntersecting) {
@@ -24,7 +24,12 @@ export class NiceAnim {
       });
       this.io.observe(this.el.querySelector('.nice-anim'));
     } else {
-      this.el.querySelector('.nice-anim').classList.add('anim');
+      const elements = document.querySelectorAll('div.nice-anim');
+      const arr = Array.from(elements);
+
+      arr.forEach((el: any) => {
+        el.dataset.anim = true;
+      })
     }
   }
 

@@ -14,14 +14,18 @@ export class NiceAnim {
   }
 
   addIntersectionObserver() {
-    this.io = new IntersectionObserver((data: any) => {
+    if (IntersectionObserver) {
+      this.io = new IntersectionObserver((data: any) => {
       
-      if (data[0].isIntersecting) {
-        this.el.querySelector('.nice-anim').classList.add('anim');
-        this.removeIntersectionObserver();
-      }
-    });
-    this.io.observe(this.el.querySelector('.nice-anim'));
+        if (data[0].isIntersecting) {
+          this.el.querySelector('.nice-anim').classList.add('anim');
+          this.removeIntersectionObserver();
+        }
+      });
+      this.io.observe(this.el.querySelector('.nice-anim'));
+    } else {
+      this.el.querySelector('.nice-anim').classList.add('anim');
+    }
   }
 
   removeIntersectionObserver() {

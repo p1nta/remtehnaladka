@@ -9,7 +9,7 @@
 }
 
 .advantages_title {
-  font-family: Charter-Roman;
+  font-family: 'Charter-Roman';
   font-size: 40px;
   color: #041543;
   letter-spacing: 1.29px;
@@ -76,7 +76,7 @@
 .advantages_item_text {
   padding-top: 25px;
   opacity: 0.6;
-  font-family: Rubik-Light;
+  font-family: 'Rubik-Light';
   font-size: 14px;
   color: #041543;
   letter-spacing: 0.51px;

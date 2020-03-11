@@ -18,7 +18,7 @@
 }
 
 .title {
-  font-family: Charter-Roman;
+  font-family: 'Charter-Roman';
   font-size: 40px;
   color: #041543;
   letter-spacing: 1.29px;
@@ -43,7 +43,7 @@
   color: #F6B93A;
   cursor: pointer;
   transition: opacity 0.3s;
-  font-family: Charter-Roman;
+  font-family: 'Charter-Roman';
   letter-spacing: 0.64px;
   text-align: center;
   line-height: 30px;

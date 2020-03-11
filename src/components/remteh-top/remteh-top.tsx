@@ -19,7 +19,7 @@ export class RemtehTop {
           </h2>
           <div class="top_wrapper_links">
             <stencil-route-link anchorClass="top_wrapper_link" url="/remtehnaladka/projects">Проекты</stencil-route-link>
-            <stencil-route-link anchorClass="top_wrapper_link" url="/remtehnaladka#contacts">Контакты</stencil-route-link>
+            <a class="top_wrapper_link" href="/remtehnaladka#contacts">Контакты</a>
           </div>
           <p class="top_part_description">
             Работая на рынке строительных услуг с 2006 года, мы заслужили

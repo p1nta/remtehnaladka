@@ -5,7 +5,7 @@
 }
 
 .directions_title {
-  font-family: Charter-Roman;
+  font-family: 'Charter-Roman';
   font-size: 40px;
   color: #041543;
   letter-spacing: 1.29px;
@@ -46,7 +46,7 @@
 }
 
 .directions_item_title {
-  font-family: Charter-Roman;
+  font-family: 'Charter-Roman';
   font-size: 22px;
   color: #041543;
   letter-spacing: 0.76px;
@@ -57,7 +57,7 @@
 
 .directions_item_description {
   opacity: 0.6;
-  font-family: Rubik-Light;
+  font-family: 'Rubik-Light';
   font-size: 14px;
   color: #041543;
   letter-spacing: 0.41px;
@@ -72,7 +72,7 @@
 }
 
 .directions_item_link {
-  font-family: Rubik-Regular;
+  font-family: 'Rubik-Regular';
   font-size: 14px;
   color: #F6B93A;
   letter-spacing: 0.41px;
@@ -127,7 +127,7 @@
     font-size: 35px;
     max-width: 280px;
     margin: 0 auto;
-    font-family: Charter-Roman;
+    font-family: 'Charter-Roman';
     letter-spacing: 1.13px;
     line-height: 40px;
   }
@@ -136,7 +136,7 @@
     max-width: 280px;
     margin: 0 auto 33px;
     font-size: 25px;
-    font-family: Charter-Roman;
+    font-family: 'Charter-Roman';
     letter-spacing: 0.86px;
     line-height: 30px;
   }
@@ -152,7 +152,7 @@
 
   .directions_item_link {
     font-size: 16px;
-    font-family: Rubik-Regular;
+    font-family: 'Rubik-Regular';
     letter-spacing: 0.47px;
     line-height: 30px;
   }

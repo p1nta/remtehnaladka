@@ -12,7 +12,7 @@
   color: #041543;
   letter-spacing: 2.16px;
   line-height: 60px;
-  font-family: Charter-Roman;
+  font-family: 'Charter-Roman';
   margin-bottom: 69px;
 }
 
@@ -39,7 +39,7 @@
   letter-spacing: 0.47px;
   line-height: 30px;
   margin-bottom: 30px;
-  font-family: Charter-Roman;
+  font-family: 'Charter-Roman';
 }
 
 .case_paragraph:last-child {
@@ -86,7 +86,7 @@
     letter-spacing: 1.13px;
     line-height: 45px;
     margin-bottom: 43px;
-    font-family: Charter-Roman;
+    font-family: 'Charter-Roman';
     padding: 0 20px;
   }
 
@@ -97,7 +97,7 @@
     color: #041543;
     line-height: 30px;
     margin-bottom: 30px;
-    font-family: Rubik-Light;
+    font-family: 'Rubik-Light';
     letter-spacing: 0.67px;
   }
 
@@ -118,6 +118,6 @@
   }
 
   .case_paragraph {
-    font-family: Rubik-Light;
+    font-family: 'Rubik-Light';
   }
 }

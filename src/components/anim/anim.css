@@ -1,4 +1,4 @@
-@keyframes slide-up {
+@keyframes slideUp {
   0% {
     transform: translateY(50%);
   }
@@ -15,5 +15,5 @@
 }
 
 .anim {
-  animation-name: slide-up;
+  animation-name: slideUp;
 }

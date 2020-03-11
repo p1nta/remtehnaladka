@@ -1,14 +1,6 @@
 @font-face {
-  font-family: 'Rubik-Bold';
-  src: url('/assets/fonts/rubik_bold.ttf') format('ttf');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Rubik-Roman';
-  src: url('/assets/fonts/rubik_regular.ttf') format('ttf');
+  src: url('/assets/fonts/rubik_regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,7 +8,7 @@
 
 @font-face {
   font-family: 'Rubik-Light';
-  src: url('/assets/fonts/rubik_light.ttf') format('ttf');
+  src: url('/assets/fonts/rubik_light.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -24,7 +16,7 @@
 
 @font-face {
   font-family: 'Charter-Roman';
-  src: url('/assets/fonts/charter_regular.ttf') format('otf');
+  src: url('/assets/fonts/charter_regular.otf') format('opentype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -79,7 +71,7 @@ html, body {
   left: 0;
   height: auto;
   -webkit-overflow-scrolling: touch;
-  font-family: 'Rubik', Arial, sans-serif;
+  font-family: 'Rubik-Roman', Arial, sans-serif;
 }
 
 .m_clicable {
@@ -93,29 +85,4 @@ html, body {
 
 .intent_mouse button {
   outline: none !important;
-}
-
-/* .fade_in_section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-  will-change: opacity, visibility;
-}
-.fade_in_section.is_visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-} */
-
-@keyframes fade-in {
-  from {opacity: 0; transform: scale(.7,.7)}
-  to {opacity: 1;}
-}
-.fade-in-element {
-animation: fade-in 1.4s;
-}
-
-.hidden {
-  opacity: 0;
 }

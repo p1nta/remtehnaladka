@@ -21,6 +21,7 @@
 graph TD;
   remteh-what-we-do --> remteh-directions
   remteh-what-we-do --> nice-anim
+  remteh-directions --> stencil-route-link
   remteh-directions --> nice-anim
   remteh-home --> remteh-what-we-do
   style remteh-what-we-do fill:#f9f,stroke:#333,stroke-width:4px

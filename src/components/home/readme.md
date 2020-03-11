@@ -33,8 +33,10 @@ graph TD;
   remteh-home --> remteh-bottom
   remteh-header --> stencil-route-link
   remteh-top --> nice-anim
+  remteh-top --> stencil-route-link
   remteh-what-we-do --> remteh-directions
   remteh-what-we-do --> nice-anim
+  remteh-directions --> stencil-route-link
   remteh-directions --> nice-anim
   remteh-main-projects --> nice-anim
   remteh-why-trust --> nice-anim

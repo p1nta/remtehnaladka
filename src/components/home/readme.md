@@ -32,6 +32,7 @@ graph TD;
   remteh-home --> remteh-contacts
   remteh-home --> remteh-bottom
   remteh-header --> stencil-route-link
+  remteh-top --> prog-img
   remteh-top --> nice-anim
   remteh-top --> stencil-route-link
   remteh-what-we-do --> remteh-directions

@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type                             | Default     |
 | -------- | --------- | ----------- | -------------------------------- | ----------- |
-| `mode`   | `mode`    |             | `"Case" \| "Home" \| "Projects"` | `undefined` |
+| `mode`   | `mode`    |             | `"Case" or "Home" or "Projects"` | `undefined` |
 
 
 ## Dependencies

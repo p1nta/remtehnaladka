@@ -11,7 +11,7 @@
 | ---------------- | ----------------- | ----------- | ----------------------------------------------- | ----------- |
 | `onSelect`       | --                |             | `(value: IFilters) => void`                     | `undefined` |
 | `options`        | --                |             | `IFilters[]`                                    | `undefined` |
-| `selectedOption` | `selected-option` |             | `"All" \| "Civil" \| "Foreign" \| "Industrial"` | `undefined` |
+| `selectedOption` | `selected-option` |             | `"All" or "Civil" or "Foreign" or "Industrial"` | `undefined` |
 
 
 ## Dependencies

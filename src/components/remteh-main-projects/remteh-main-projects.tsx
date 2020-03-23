@@ -95,7 +95,7 @@ export class RemtehMainProjects {
             </div>
             <stencil-route-link
               url="/remtehnaladka/projects"
-              class="projects_main_all_link m_clicable"
+              anchorClass="projects_main_all_link m_clicable"
             >
               Посмотреть все проекты
             </stencil-route-link>

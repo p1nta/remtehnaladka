@@ -24,8 +24,6 @@ export class Img {
   _onLoad = () => {
     this.image = this.src;
     this.loading = false;
-
-    document.removeChild(this.imageTag);
   };
 
   /**
@@ -45,8 +43,6 @@ export class Img {
     this.imageTag = imageTag;
     this.imageTag.onload = this._onLoad;
     this.imageTag.src = src;
-
-    document.appendChild(this.imageTag);
   };
 
   render() {
@@ -64,9 +60,8 @@ export class Img {
         class={this.class}
         alt={this.src}
         style={{
-          filter: this.loading ? 'blur(10px)' : 'none',
+          filter: 'blur(5px)',
         }}
-        onLoad={this._onLoad}
       />
     );
 
@@ -74,8 +69,6 @@ export class Img {
       return preloading;
     }
 
-    return loaded;
-    
+    return loaded; 
   }
-
 }

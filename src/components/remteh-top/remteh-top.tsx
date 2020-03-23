@@ -13,12 +13,12 @@ export class RemtehTop {
         <prog-img
           src="./assets/img/top-1920.png"
           placeHolder="./assets/img/top-1920-loading.png"
-          class="desctop_img"
+          class="top_desctop_img"
         />
         <prog-img
           src="./assets/img/top-375.png"
           placeHolder="./assets/img/top-375-loading.png"
-          class="mobile_img"
+          class="top_mobile_img"
         />
         <nice-anim>
           <h2 class="top_part_title">

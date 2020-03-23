@@ -37,6 +37,10 @@ export class RemtehHeader {
   }
 
   onClickContacts() {
+    if ('history' in window && 'pushState' in history) {
+      history.pushState(null, null, '#contacts');
+    }
+
     const contactsCoordinates = document.getElementsByTagName('remteh-bottom')[0].offsetTop;
 
     window.scroll({
@@ -44,6 +48,26 @@ export class RemtehHeader {
       left: 0, 
       behavior: 'smooth'
     });
+  }
+
+  onLogoClick = () => {
+    if (this.mode === 'Home') {
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  onProjectsClick = () => {
+    if (this.mode === 'Projects') {
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+    }
   }
 
   componentDidUnload() {
@@ -77,12 +101,19 @@ export class RemtehHeader {
         <stencil-route-link
           anchorClass="left_group"
           url="/"
+          onClick={this.onLogoClick}
         >
           <img src={logo} class="logo_header"/>
           <p class="logo_text_header">REMTEHNALADKA</p>
         </stencil-route-link>
         <div class="right_group">
-          <stencil-route-link url="/projects" anchorClass="header_button" exact={true}>{this.getText('headerProjects')}</stencil-route-link>
+          <stencil-route-link
+            url="/projects"
+            anchorClass="header_button"
+            onClick={this.onProjectsClick}
+            exact={true}>
+              {this.getText('headerProjects')}
+            </stencil-route-link>
           {buttonContact}
         </div>
       </header>

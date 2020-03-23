@@ -75,6 +75,16 @@ export class RemtehAdvantages {
   render() {
     return (
       <div class="advantages_wrapper">
+        <prog-img
+          src="./assets/img/advantages-1920.png"
+          placeHolder="./assets/img/advantages-1920-loading.png"
+          class="advantages_desctop_img"
+        />
+        <prog-img
+          src="./assets/img/advantages-375.png"
+          placeHolder="./assets/img/advantages-375-loading.png"
+          class="advantages_mobile_img"
+        />
         <nice-anim>
           <h3 class="advantages_title">
             Наши преимущества

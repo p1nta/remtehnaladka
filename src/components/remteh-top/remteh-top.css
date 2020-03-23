@@ -7,7 +7,7 @@
   z-index: 7;
 }
 
-.desctop_img {
+.top_desctop_img {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
@@ -17,10 +17,10 @@
   display: block;
 }
 
-.mobile_img {
+.top_mobile_img {
   position: absolute;
+  width: 100%;
   min-width: 100%;
-  min-height: 100%;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -74,11 +74,11 @@
 }
 
 @media only screen and (max-width: 736px) {
-  .desctop_img {
+  .top_desctop_img {
     display: none;
   }
 
-  .mobile_img {
+  .top_mobile_img {
     display: block;
   }
   .top_part_wrapper {

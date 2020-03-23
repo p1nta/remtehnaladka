@@ -79,6 +79,16 @@ export class RemtehWhatWeDo {
   render() {
     return (
       <div class="what_we_do_background">
+        <prog-img
+          src="./assets/img/directions-1920.png"
+          placeHolder="./assets/img/directions-1920-loading.png"
+          class="what_we_do_desctop_img"
+        />
+        <prog-img
+          src="./assets/img/directions-375.png"
+          placeHolder="./assets/img/directions-375-loading.png"
+          class="what_we_do_mobile_img"
+        />
         <remteh-directions></remteh-directions>
         <div class="what_we_do_wrapper">
           <nice-anim>

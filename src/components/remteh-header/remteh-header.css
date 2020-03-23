@@ -29,10 +29,6 @@
   background-color: transparent;
 }
 
-.home_header .left_group {
-  pointer-events:  none;
-}
-
 .show_header {
   animation: findIn 0.3s normal forwards;
 }
@@ -63,6 +59,7 @@
 
 .left_group, .right_group {
   position: relative;
+  display: inline-block;
   z-index: 1;
 }
 

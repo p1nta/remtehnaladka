@@ -93,12 +93,12 @@ export class RemtehMainProjects {
             <div class="projects_main_examples">
               {this.exampleElements.map(this.renderExampleItem)}
             </div>
-            <a
-              href="/projects"
-              class="projects_main_all_link m_clicable"
+            <stencil-route-link
+              url="/projects"
+              anchorClass="projects_main_all_link m_clicable"
             >
               Посмотреть все проекты
-            </a>
+            </stencil-route-link>
           </nice-anim>
         </div>
       </div>

@@ -8,6 +8,7 @@ export const config: Config = {
   globalScript: 'src/global/app.ts',
   devServer: {
     port: 3000,
+    openBrowser: false,
   },
   outputTargets: [
     {

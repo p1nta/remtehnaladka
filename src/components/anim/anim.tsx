@@ -18,13 +18,17 @@ export class NiceAnim {
       this.io = new IntersectionObserver((data: any) => {
       
         if (data[0].isIntersecting) {
-          this.el.querySelector('.nice-anim').classList.add('anim');
-          this.removeIntersectionObserver();
+          if (!window.location.href.includes('#contacts')) {
+            this.el.querySelector('.nice-anim').classList.add('anim');
+          } else {
+            this.el.querySelector('.nice-anim').classList.add('no-anim');
+            this.removeIntersectionObserver();
+          }
         }
       });
       this.io.observe(this.el.querySelector('.nice-anim'));
     } else {
-      const elements = document.querySelectorAll('div.nice-anim');
+      const elements = document.querySelectorAll('.nice-anim');
       const arr = Array.from(elements);
 
       arr.forEach((el: any) => {

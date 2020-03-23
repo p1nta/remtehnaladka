@@ -97,7 +97,7 @@
     color: #041543;
     line-height: 30px;
     margin-bottom: 30px;
-    font-family: 'Rubik-Light';
+    font-family: 'Rubik';
     letter-spacing: 0.67px;
   }
 
@@ -118,6 +118,6 @@
   }
 
   .case_paragraph {
-    font-family: 'Rubik-Light';
+    font-family: 'Rubik';
   }
 }

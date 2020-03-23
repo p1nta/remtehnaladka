@@ -1,20 +1,4 @@
 @font-face {
-  font-family: 'Rubik-Roman';
-  src: url('../assets/fonts/rubik_regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Rubik-Light';
-  src: url('../assets/fonts/rubik_light.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Charter-Roman';
   src: url('../assets/fonts/charter_regular.otf') format('opentype');
   font-weight: 100;
@@ -36,6 +20,7 @@
   -webkit-tap-highlight-color: transparent;
   word-break: break-word;
   outline-color: #c4d8f7;
+  border: 0px;
 }
 
 *:after, *:before {
@@ -71,7 +56,7 @@ html, body {
   left: 0;
   height: auto;
   -webkit-overflow-scrolling: touch;
-  font-family: 'Rubik-Roman', Arial, sans-serif;
+  font-family: 'font-family: 'Rubik';', Georgia, sans-serif;
 }
 
 .m_clicable {

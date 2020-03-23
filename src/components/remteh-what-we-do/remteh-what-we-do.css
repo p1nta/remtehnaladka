@@ -1,13 +1,28 @@
 .what_we_do_background {
-  background: url("./assets/img/city_architecture_x2.png");
-  background-position: bottom;
-  background-size: cover;
   position: relative;
   z-index: 5;
 }
 
+.what_we_do_desctop_img {
+  position: absolute;
+  min-width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.what_we_do_mobile_img {
+  position: absolute;
+  min-width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
 .what_we_do_wrapper {
-  padding: 70px 100px 190px;
+  padding: 50px 100px 190px;
 }
 
 .what_we_do_title {
@@ -25,7 +40,7 @@
   margin: 115px auto 0;
   font-size: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .what_we_do_items_column {
@@ -33,15 +48,17 @@
   flex-direction: column;
   justify-content: space-between;
   width: calc((100% - 40px) / 2);
+  max-width: 400px;
 }
 
 .what_we_do_item {
   background: #FFFFFF;
-  box-shadow: 0 0 20px 0 rgba(105,136,204,0.4);
+  box-shadow: 0 0 20px 0 rgba(105,136,204,0.25);
   border-radius: 12px;
   display: inline-block;
   padding: 40px;
-  height: calc(50% - 20px);
+  margin-bottom: 40px;
+  min-height: calc(50% - 20px);
   box-sizing: border-box;
 }
 
@@ -62,7 +79,7 @@
 
 .what_we_do_item_description {
   opacity: 0.6;
-  font-family: 'Rubik-Light';
+  font-family: 'Rubik';
   font-size: 14px;
   color: #041543;
   letter-spacing: 0.6px;
@@ -77,8 +94,12 @@
 }
 
 @media only screen and (max-width: 736px) {
-  .what_we_do_background {
-    background-image: url("./assets/img/city_architecture_x2_mobile.png");
+  .what_we_do_desctop_img {
+    display: none;
+  }
+
+  .what_we_do_mobile_img {
+    display: block;
   }
 
   .what_we_do_title {
@@ -89,10 +110,12 @@
     padding: 50px 20px 250px;
   }
   .what_we_do_items_wrapper {
+    margin-top: 75px;
     display: block;
     width: 100%;
   }
   .what_we_do_items_column {
+    max-width: 100%;
     width: 100%;
     margin: 0 0 40px;
   }

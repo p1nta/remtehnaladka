@@ -23,7 +23,7 @@
 
 - stencil-route-link
 - [nice-anim](../anim)
-- [tab-bar]()
+- [tab-bar](.)
 
 ### Graph
 ```mermaid

@@ -13,12 +13,14 @@
 
 ### Depends on
 
+- [prog-img](../img)
 - [remteh-directions](../remteh-directions)
 - [nice-anim](../anim)
 
 ### Graph
 ```mermaid
 graph TD;
+  remteh-what-we-do --> prog-img
   remteh-what-we-do --> remteh-directions
   remteh-what-we-do --> nice-anim
   remteh-directions --> stencil-route-link

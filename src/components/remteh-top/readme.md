@@ -20,12 +20,14 @@
 
 ### Depends on
 
+- [prog-img](../img)
 - [nice-anim](../anim)
 - stencil-route-link
 
 ### Graph
 ```mermaid
 graph TD;
+  remteh-top --> prog-img
   remteh-top --> nice-anim
   remteh-top --> stencil-route-link
   remteh-home --> remteh-top

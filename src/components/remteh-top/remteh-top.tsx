@@ -10,11 +10,21 @@ export class RemtehTop {
   render() {
     return (
       <div class={`top_part_wrapper ${this.class}`}>
+        <prog-img
+          src="./assets/img/top-1920.png"
+          placeHolder="./assets/img/top-1920-loading.png"
+          class="top_desctop_img"
+        />
+        <prog-img
+          src="./assets/img/top-375.png"
+          placeHolder="./assets/img/top-375-loading.png"
+          class="top_mobile_img"
+        />
         <nice-anim>
           <h2 class="top_part_title">
-            Строительство<br/>
-            объектов промышленного<br/>
-            и гражданского<br/>
+            Строительство
+            объектов промышленного
+            и гражданского
             назначения в Украине
           </h2>
           <div class="top_wrapper_links">

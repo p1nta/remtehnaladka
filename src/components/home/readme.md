@@ -32,8 +32,10 @@ graph TD;
   remteh-home --> remteh-contacts
   remteh-home --> remteh-bottom
   remteh-header --> stencil-route-link
+  remteh-top --> prog-img
   remteh-top --> nice-anim
   remteh-top --> stencil-route-link
+  remteh-what-we-do --> prog-img
   remteh-what-we-do --> remteh-directions
   remteh-what-we-do --> nice-anim
   remteh-directions --> stencil-route-link
@@ -41,6 +43,7 @@ graph TD;
   remteh-main-projects --> nice-anim
   remteh-main-projects --> stencil-route-link
   remteh-why-trust --> nice-anim
+  remteh-advantages --> prog-img
   remteh-advantages --> nice-anim
   remteh-clients --> nice-anim
   style remteh-home fill:#f9f,stroke:#333,stroke-width:4px

@@ -18,6 +18,10 @@
   animation-name: slideUp;
 }
 
+.no-anim {
+  opacity: 1;
+}
+
 .anim {
   animation-name: slideUp;
 }

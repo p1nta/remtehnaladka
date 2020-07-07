@@ -1,6 +1,7 @@
 import { Component, h, Prop } from '@stencil/core';
 
 import { IFilters } from './tab-slider';
+import langs from '../langs/lang-ru.json';
 
 @Component({
   tag: 'tab-bar',
@@ -11,13 +12,6 @@ export class TabBar {
   @Prop() onChangeTab: (value: IFilters) => void;
   @Prop() selectedTab: IFilters;
 
-  filterTexts = {
-    All: 'Все объекты',
-    Industrial: 'Промышленные объекты',
-    Civil: 'Гражданские объекты',
-    Foreign: 'Иностранный заказчик',
-  }
-
   renderDesctopFiltres() {
     return this.tabs.map(tab => (
       <button
@@ -25,7 +19,7 @@ export class TabBar {
         name={tab}
         onClick={this.onClick}
       >
-        <p class="tab_text">{this.filterTexts[tab]}</p>
+        <p class="tab_text">{langs[tab]}</p>
       </button>
     ));
   }

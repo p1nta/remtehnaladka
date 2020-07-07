@@ -41,6 +41,7 @@ graph TD;
   remteh-directions --> stencil-route-link
   remteh-directions --> nice-anim
   remteh-main-projects --> nice-anim
+  remteh-main-projects --> stencil-route-link
   remteh-why-trust --> nice-anim
   remteh-advantages --> prog-img
   remteh-advantages --> nice-anim

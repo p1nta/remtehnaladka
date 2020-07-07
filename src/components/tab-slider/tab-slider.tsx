@@ -22,14 +22,6 @@ export type IFilters = 'All' | 'Industrial' | 'Civil' | 'Foreign';
 export class TabSlider {
   refElement: HTMLDivElement;
 
-  constructor() {
-    document.querySelector('lang-method').getText().then((method) => {
-      this.getText = method;
-    });
-  }
-
-  getText: (key: string) => void;
-
   @Prop() tabs: IFilters[];
   @Prop() slides: ISlideFilter;
 
@@ -57,7 +49,9 @@ export class TabSlider {
           srcset={`${slide.path} 1x, ${slide.pathRetina} 2x`}
           src={slide.path}
         />
-        <p class="slide_text">{this.getText(slide.textCode)}</p>
+        <p class="slide_text">
+          {slide.textCode}
+        </p>
       </stencil-route-link>
     )
   }

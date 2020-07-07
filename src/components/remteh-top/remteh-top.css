@@ -21,7 +21,7 @@
   position: absolute;
   width: 100%;
   min-width: 100%;
-  bottom: 0;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -82,8 +82,7 @@
     display: block;
   }
   .top_part_wrapper {
-    padding: 160px 40px;
-    /* background-image: url("./assets/img/top_mobile.png"); */
+    padding: 160px 10px 160px 40px;
   }
   .top_part_title {
     font-size: 35px;

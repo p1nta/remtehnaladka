@@ -11,15 +11,7 @@ import * as slides from './slides.json';
 })
 
 export class Projects {
-  constructor() {
-    document.querySelector('lang-method').getText().then((method) => {
-      this.getText = method;
-    });
-  }
-
   @Prop() match: MatchResults;
-
-  getText: (key: string) => void;
 
   render() {
     return (
@@ -36,7 +28,9 @@ export class Projects {
             src={Constants.projectsHeadeMobile}
             class="title_img title_img_mobile"
           />
-          <p class="title_text">{this.getText('projectsTitle')}</p>
+          <p class="title_text">
+            Проекты
+          </p>
         </div>
           <div class="content">
             <tab-slider

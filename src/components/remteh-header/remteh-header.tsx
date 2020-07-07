@@ -8,14 +8,9 @@ import logo from '../../assets/svg/logo.svg';
 })
 export class RemtehHeader {
   constructor() {
-    document.querySelector('lang-method').getText().then((method) => {
-      this.getText = method;
-    });
-
     window.addEventListener('scroll', this.onScroll);
   }
 
-  getText: (key: string) => void;
   headerRef: any;
 
   @Prop() mode: 'Home' | 'Projects' | 'Case';
@@ -91,9 +86,13 @@ export class RemtehHeader {
     const notCaseLocation = window.location.pathname === '/' || window.location.pathname === '/projects';
     const buttonContact = notCaseLocation ?
       (
-        <button class="header_button" onClick={this.onClickContacts}>{this.getText('headerContacts')}</button>
+        <button class="header_button" onClick={this.onClickContacts}>
+          Контакты
+        </button>
       ) : (
-        <a href="/#contacts" class="header_button">{this.getText('headerContacts')}</a>
+        <a href="/#contacts" class="header_button">
+          Контакты
+        </a>
       )
 
     return (
@@ -112,7 +111,7 @@ export class RemtehHeader {
             anchorClass="header_button"
             onClick={this.onProjectsClick}
             exact={true}>
-              {this.getText('headerProjects')}
+              Проекты
             </stencil-route-link>
           {buttonContact}
         </div>

@@ -4,13 +4,13 @@
       "path": "./assets/img/Budfarfor_slide.jpg",
       "pathRetina": "./assets/img/Budfarfor_slide.jpg",
       "link": "/budfarfor",
-      "textCode": "slideBudfarfor"
+      "textCode": "Логистический центр Будфарфор в Славуте"
     },
     {
       "path": "./assets/img/roshen_1.jpg",
       "pathRetina": "./assets/img/roshen_1.jpg",
       "link": "/roshen",
-      "textCode": "slideRoshen"
+      "textCode": "Фабрика Roshen в Виннице"
     }
   ],
   "Civil": [
@@ -18,13 +18,13 @@
       "path": "./assets/img/ekvator_1.jpg",
       "pathRetina": "./assets/img/ekvator_1.jpg",
       "link": "/ekvator",
-      "textCode": "slideEkvator"
+      "textCode": "Торгово-развлекательный центр Экватор в Полтаве"
     },
     {
       "path": "./assets/img/geliar_1.jpg",
       "pathRetina": "./assets/img/geliar_1.jpg",
       "link": "/geliar",
-      "textCode": "slideGeliar"
+      "textCode": "Атлет клуб Гелиар в Киеве"
     }
   ],
   "Foreign": [
@@ -32,7 +32,7 @@
       "path": "./assets/img/leoni_1.jpg",
       "pathRetina": "./assets/img/leoni_1.jpg",
       "link": "/leoni",
-      "textCode": "slideLeoni"
+      "textCode": "Завод Leoni в Коломые"
     }
   ]
 }

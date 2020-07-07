@@ -1,23 +1,15 @@
 import { Component, h, State, Prop } from '@stencil/core';
 
 import bracketIcon from '../../assets/svg/bracket.svg';
-
 import { IFilters } from '../tab-slider/tab-slider';
+import langs from '../langs/lang-ru.json';
 
 @Component({
   tag: 'remteh-select',
   styleUrl: 'remteh-select.css',
 })
 export class RemtehSelect {
-  constructor() {
-    document.querySelector('lang-method').getText().then((method) => {
-      this.getText = method;
-    });
-  }
-
   refInput: HTMLInputElement;
-
-  getText: (key: string) => void;
 
   @Prop() options: IFilters[];
   @Prop() selectedOption: IFilters;
@@ -51,9 +43,11 @@ export class RemtehSelect {
       el !== this.selectedOption && filtres.push(el);
     });
 
-    return filtres.map(el => {
-      return <div data-value={el} class="select_option" onClick={this.onClick}>{this.getText(`filter${el}`)}</div>
-    })
+    return filtres.map(el => (
+      <div data-value={el} class="select_option" onClick={this.onClick}>
+        {langs[el]}
+      </div>
+    ));
   }
 
   render() {
@@ -69,7 +63,7 @@ export class RemtehSelect {
         />
         <div onClick={this.onClick} data-value={this.selectedOption} class="select_window">
           <img src={bracketIcon} class={iconStyles} />
-          {this.getText(`filter${this.selectedOption}`)}
+          {langs[this.selectedOption]}
         </div>
         <div class="select_dropdown">
           {this.prepareDropdown()}

@@ -8,24 +8,16 @@ import svgArrow from '../../assets/svg/arrow.svg';
   // shadow: true
 })
 export class RemtehContacts {
-  constructor() {
-    document.querySelector('lang-method').getText().then((method) => {
-      this.getText = method;
-    });
-  }
-
-  getText: (key: string) => void;
-
   render() {
     return (
       <div class="contacts_wrapper" id="contacts">
         <div class="contacts_container">
           <img src={svgArrow} class="arrow" />
           <p class="title">
-            {this.getText('contactsTitle')}
+            Контакты
           </p>
           <p class="description">
-            {this.getText('contactsContactUs')}
+            Связаться с нами:
           </p>
           <a
             class="email"
@@ -34,11 +26,11 @@ export class RemtehContacts {
             info@rtn.com.ua
           </a>
           <p class="phones">
-            <a href="tel:++380999709482">+38 (099) 970-94-82</a>
-            <a href="tel:++380954930687">+38 (095) 493-06-87</a>
+            <a href="tel:+380999709482">+38 (099) 970-94-82</a>
+            <a href="tel:+380954930687">+38 (095) 493-06-87</a>
           </p>
           <p class="adress">
-            {this.getText('contactsAddres')}
+            г. Полтава, Украина, улица Котляревского 1/27
           </p>
         </div>
       </div>

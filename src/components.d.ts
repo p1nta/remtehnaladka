@@ -9,10 +9,6 @@ import { MatchResults, } from "@stencil/router";
 import { IFilters, } from "./components/tab-slider/tab-slider";
 import { IFilters as IFilters1, ISlideFilter, } from "./components/tab-slider/tab-slider";
 export namespace Components {
-    interface LangMethod {
-        "getCaseText": () => Promise<(key: string) => any>;
-        "getText": () => Promise<(key: string) => any>;
-    }
     interface NiceAnim {
     }
     interface ProgImg {
@@ -68,12 +64,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLLangMethodElement extends Components.LangMethod, HTMLStencilElement {
-    }
-    var HTMLLangMethodElement: {
-        prototype: HTMLLangMethodElement;
-        new (): HTMLLangMethodElement;
-    };
     interface HTMLNiceAnimElement extends Components.NiceAnim, HTMLStencilElement {
     }
     var HTMLNiceAnimElement: {
@@ -189,7 +179,6 @@ declare global {
         new (): HTMLTabSliderElement;
     };
     interface HTMLElementTagNameMap {
-        "lang-method": HTMLLangMethodElement;
         "nice-anim": HTMLNiceAnimElement;
         "prog-img": HTMLProgImgElement;
         "remteh-advantages": HTMLRemtehAdvantagesElement;
@@ -212,8 +201,6 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface LangMethod {
-    }
     interface NiceAnim {
     }
     interface ProgImg {
@@ -268,7 +255,6 @@ declare namespace LocalJSX {
         "tabs"?: IFilters[];
     }
     interface IntrinsicElements {
-        "lang-method": LangMethod;
         "nice-anim": NiceAnim;
         "prog-img": ProgImg;
         "remteh-advantages": RemtehAdvantages;
@@ -294,7 +280,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "lang-method": LocalJSX.LangMethod & JSXBase.HTMLAttributes<HTMLLangMethodElement>;
             "nice-anim": LocalJSX.NiceAnim & JSXBase.HTMLAttributes<HTMLNiceAnimElement>;
             "prog-img": LocalJSX.ProgImg & JSXBase.HTMLAttributes<HTMLProgImgElement>;
             "remteh-advantages": LocalJSX.RemtehAdvantages & JSXBase.HTMLAttributes<HTMLRemtehAdvantagesElement>;

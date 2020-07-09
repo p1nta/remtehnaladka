@@ -119,17 +119,12 @@
   .what_we_do_items_column {
     max-width: 100%;
     width: 100%;
-    margin: 0 0 40px;
+    margin: 0;
   }
 
 
   .what_we_do_item:nth-child(odd) {
     margin-bottom: 40px;
-  }
-
-
-  .what_we_do_items_column:last-child {
-    margin-bottom: 0;
   }
 
   .what_we_do_item {

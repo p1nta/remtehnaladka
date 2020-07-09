@@ -80,6 +80,7 @@
   text-decoration: none;
   transition: opacity 0.3s;
   text-align: center;
+  vertical-align: top;
 }
 
 .slide:last-child {
@@ -93,6 +94,7 @@
   font-family: 'Charter-Roman';
   padding: 0 10px;
   letter-spacing: 0.5104px;
+  min-height: 60px;
 }
 
 .slide:hover {

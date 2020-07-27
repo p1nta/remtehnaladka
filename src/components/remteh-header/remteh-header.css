@@ -39,22 +39,14 @@
   background: linear-gradient(0deg, #6B749F -238.38%, #021238 112.53%);
 }
 
-.logo_header {
+.logo_header, .logo_full_header {
   height: 35px;
-  margin-right: 22px;
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 9px;
 }
 
-.logo_text_header {
-  font-family: 'Rubik';
-  font-size: 20px;
-  color: #FFFFFF;
-  letter-spacing: 1.03px;
-  color: #FFFFFF;
-  vertical-align: middle;
-  display: inline-block;
+.logo_header {
+  display: none;
 }
 
 .left_group, .right_group {
@@ -103,26 +95,26 @@
   .home_header .right_group {
     display: none;
   }
-  .home_header, .logo_header {
-    margin-right: 20px;
-  }
 
-  .logo_header {
+  .logo_header, .logo_full_header {
     height: 28px;
   }
 
-  .home_header .logo_text_header {
-    font-size: 15.625px;
-    line-height: 19px;
-    letter-spacing: 0.801563px;
-  }
 
-  .projects_header .logo_text_header {
+  .projects_header .logo_full_header {
     display: none;
   }
 
-  .case_header .logo_text_header {
+  .projects_header .logo_header {
+    display: inline-block;
+  }
+
+  .case_header .logo_full_header {
     display: none;
+  }
+
+  .case_header .logo_header {
+    display: inline-block;
   }
 
   .header_button {
@@ -139,12 +131,8 @@
     padding: 0 20px;
   }
 
-  .case_header {
-    padding: 7px 18px 0px;
-  }
-
-  .projects_header {
-    padding: 7px 18px 0;
+  .case_header, .projects_header {
+    padding: 7px 18px;
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component, Prop, h, State } from '@stencil/core';
 
 import logo from '../../assets/svg/logo.svg';
+import logoWithName from '../../assets/svg/logo_with_name.svg';
 
 @Component({
   tag: 'remteh-header',
@@ -103,7 +104,7 @@ export class RemtehHeader {
           onClick={this.onLogoClick}
         >
           <img src={logo} class="logo_header"/>
-          <p class="logo_text_header">REMTEHNALADKA</p>
+          <img src={logoWithName} class="logo_full_header"/>
         </stencil-route-link>
         <div class="right_group">
           <stencil-route-link

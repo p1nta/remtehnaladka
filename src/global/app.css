@@ -56,7 +56,7 @@ html, body {
   left: 0;
   height: auto;
   -webkit-overflow-scrolling: touch;
-  font-family: 'font-family: 'Rubik';', Georgia, sans-serif;
+  font-family: 'Rubik', Georgia, sans-serif;
 }
 
 .m_clicable {

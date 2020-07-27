@@ -36,6 +36,8 @@ export namespace Components {
     }
     interface RemtehMainProjects {
     }
+    interface RemtehNotFound {
+    }
     interface RemtehProjects {
         "match": MatchResults;
     }
@@ -130,6 +132,12 @@ declare global {
         prototype: HTMLRemtehMainProjectsElement;
         new (): HTMLRemtehMainProjectsElement;
     };
+    interface HTMLRemtehNotFoundElement extends Components.RemtehNotFound, HTMLStencilElement {
+    }
+    var HTMLRemtehNotFoundElement: {
+        prototype: HTMLRemtehNotFoundElement;
+        new (): HTMLRemtehNotFoundElement;
+    };
     interface HTMLRemtehProjectsElement extends Components.RemtehProjects, HTMLStencilElement {
     }
     var HTMLRemtehProjectsElement: {
@@ -190,6 +198,7 @@ declare global {
         "remteh-header": HTMLRemtehHeaderElement;
         "remteh-home": HTMLRemtehHomeElement;
         "remteh-main-projects": HTMLRemtehMainProjectsElement;
+        "remteh-not-found": HTMLRemtehNotFoundElement;
         "remteh-projects": HTMLRemtehProjectsElement;
         "remteh-root": HTMLRemtehRootElement;
         "remteh-select": HTMLRemtehSelectElement;
@@ -227,6 +236,8 @@ declare namespace LocalJSX {
     interface RemtehHome {
     }
     interface RemtehMainProjects {
+    }
+    interface RemtehNotFound {
     }
     interface RemtehProjects {
         "match"?: MatchResults;
@@ -266,6 +277,7 @@ declare namespace LocalJSX {
         "remteh-header": RemtehHeader;
         "remteh-home": RemtehHome;
         "remteh-main-projects": RemtehMainProjects;
+        "remteh-not-found": RemtehNotFound;
         "remteh-projects": RemtehProjects;
         "remteh-root": RemtehRoot;
         "remteh-select": RemtehSelect;
@@ -291,6 +303,7 @@ declare module "@stencil/core" {
             "remteh-header": LocalJSX.RemtehHeader & JSXBase.HTMLAttributes<HTMLRemtehHeaderElement>;
             "remteh-home": LocalJSX.RemtehHome & JSXBase.HTMLAttributes<HTMLRemtehHomeElement>;
             "remteh-main-projects": LocalJSX.RemtehMainProjects & JSXBase.HTMLAttributes<HTMLRemtehMainProjectsElement>;
+            "remteh-not-found": LocalJSX.RemtehNotFound & JSXBase.HTMLAttributes<HTMLRemtehNotFoundElement>;
             "remteh-projects": LocalJSX.RemtehProjects & JSXBase.HTMLAttributes<HTMLRemtehProjectsElement>;
             "remteh-root": LocalJSX.RemtehRoot & JSXBase.HTMLAttributes<HTMLRemtehRootElement>;
             "remteh-select": LocalJSX.RemtehSelect & JSXBase.HTMLAttributes<HTMLRemtehSelectElement>;

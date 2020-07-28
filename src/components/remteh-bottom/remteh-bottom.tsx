@@ -1,6 +1,6 @@
 import { Component, h } from '@stencil/core';
 
-import logo from '../../assets/svg/logo_with_name.svg';
+import logo from '../../assets/svg/logo_dark.svg';
 
 @Component({
   tag: 'remteh-bottom',

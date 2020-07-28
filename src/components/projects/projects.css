@@ -59,6 +59,7 @@
 
   .title_img_mobile {
     display: block;
+    object-fit: fill;
   }
 
   .title_img:not(.title_img_mobile) {

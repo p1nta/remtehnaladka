@@ -6,6 +6,7 @@
   width: 100%;
   padding: 65px 20px 0;
   box-sizing: border-box;
+  background: #F7F9FD;
 }
 .contacts_container {
   position: relative;
@@ -71,10 +72,6 @@
   color: #041543 !important;
 }
 
-.phones a:first-child {
-  margin-bottom: 10px;
-}
-
 .adress {
   margin: 0 auto
 }
@@ -116,5 +113,9 @@
 
   .phones {
     margin: 41px auto 32px;
+  }
+
+  .phones a:first-child {
+    margin-bottom: 10px;
   }
 }

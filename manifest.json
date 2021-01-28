@@ -1,6 +1,6 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
+  "name": "Remtexnaladka",
+  "short_name": "Remtex",
   "start_url": "/",
   "display": "standalone",
   "icons": [{
@@ -8,6 +8,6 @@
     "sizes": "20x31",
     "type": "image/png"
   }],
-  "background_color": "#16161d",
-  "theme_color": "#16161d"
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
 }

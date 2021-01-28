@@ -1,5 +1,11 @@
-<svg viewBox="0 0 24 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 32.9098H2V12.9437L12.5263 2.43526" stroke="white" stroke-width="3" stroke-linecap="square"/>
-  <path d="M11.4737 12.9437H22V23.4522" stroke="white" stroke-width="3" stroke-linecap="square"/>
-  <path d="M20.9474 13.9946L9.36841 25.5539" stroke="white" stroke-width="3" stroke-linecap="square"/>
+<svg xmlns="http://www.w3.org/2000/svg" id="Слой_1" x="0" y="0" version="1.1" viewBox="0 0 35 35" xml:space="preserve">
+  <style>
+    .st0{fill:#FFFFFF}
+  </style>
+  <switch>
+    <g>
+      <path d="M0 15.6L15.8 0l2.5 2.7-8.1 7.9v20.5h21.6V35H6.3V14.7l-3.8 3.7z" class="st0"/>
+      <path d="M15.2 10v3.7h9.6L15 23.3v5.3l13-12.8v10.5h3.8V10z" class="st0"/>
+    </g>
+  </switch>
 </svg>

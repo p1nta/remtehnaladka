@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.7182px;
-  color: #6988CC;
+  color: #FF4E45;
 }
 
 @media (max-width: 500px) {
@@ -28,7 +28,7 @@
   }
   .company_name {
     font-size: 12px;
-    color: #6988CC;
+    color: #FF4E45;
     letter-spacing: 0.62px;
     font-weight: 900;
     line-height: 14px;

@@ -13,10 +13,9 @@ export class RemtehBottom {
       <div class="bottom">
         <img src={logo} class="logo" />
         <p class="company_name">
-          OOO «РЕМТЕХНАЛАДКА». 2020  
+          OOO «РЕМТЕХНАЛАДКА». 2021  
         </p>
       </div>
     );
   }
-
 }

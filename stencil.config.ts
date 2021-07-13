@@ -36,14 +36,6 @@ export const config: Config = {
   }],
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader',
-    },
-    {
-      type: 'docs-readme',
-      footer: '',
-    },
-    {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
